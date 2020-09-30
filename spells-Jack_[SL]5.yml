@@ -1,0 +1,13 @@
+Jack_[SL]5:
+    spell-class: ".instant.LeapSpell"
+    forward-velocity: 5
+    upward-velocity: -20
+    effects:
+      1:
+        position: caster
+        effect: particles
+        particle-name: largesmoke
+        horiz-spread: 1.5
+        vert-spread: 1.5
+        speed: 0.1
+        count: 100

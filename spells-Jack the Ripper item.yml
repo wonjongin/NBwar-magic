@@ -1,0 +1,11 @@
+predefined-items:     
+    JacktheRipper:     
+        type: "276"     
+        name: "&8&lJack &7&lthe &f&lRipper"     
+        lore:    
+          - "&8&l한때 런던을 공포에 떨게했던"     
+          - "&8&l잭 더 리퍼의 힘이 형상화된 날붙이이다."
+          - "&8&l[R] 검기를 날리면서 뒤로 빠르게 이동합니다."
+          - "&8&l[SS] 주변에 파장을 일으킨뒤 몸을 숨깁니다."
+          - "&8&l[SL] 뒤로 이동하여 적을 공격합니다."            
+        unbreakable: true           

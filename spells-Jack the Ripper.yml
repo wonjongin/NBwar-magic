@@ -1,0 +1,55 @@
+JacktheRipper_[SL]:
+    spell-class: ".MultiSpell"
+    cast-item: JacktheRipper
+    modifiers:
+        - sneaking required
+    cooldown: 10
+    str-on-cooldown: "&7&l[그림자 절단] %c초후 다시 사용 가능합니다"      
+    spells:
+        - Jack_[SL] 
+        - DELAY 5
+        - Jack_[SL]2
+        - DELAY 10
+        - Jack_[SL]3
+        - DELAY 5
+        - Jack_[SL]4
+        - DELAY 12
+        - Jack_[SL]5
+        - DELAY 10
+        - Jack_[SL]6
+        - DELAY 3
+        - Jack_[SL]7
+JacktheRipper_[SS]:
+    spell-class: ".PassiveSpell" 
+    triggers: 
+        - stopsneak 
+    modifiers: 
+        - holding 276|"&8&lJack &7&lthe &f&lRipper" required 
+    spells:
+        - Jack_[SS]Dummy
+Jack_[SS]Dummy: 
+    spell-class: ".buff.DummySpell"
+    duration: 0.5
+Jack_[SS]Passive2: 
+    spell-class: ".PassiveSpell"
+    cooldown: 10
+    str-cast-self: "&7&l[ Ripper ] 몸을 숨깁니다!"
+    triggers: 
+        - sneak 
+    modifiers: 
+        - holding 276|"&8&lJack &7&lthe &f&lRipper" required 
+        - buffactive Jack_[SS]Dummy required 
+    spells:
+        - Jack_[SS]2
+        - Jack_[SS]
+JacktheRipper_[R]:
+    spell-class: ".MultiSpell"
+    right-click-cast-item: JacktheRipper
+    modifiers:
+        - sneaking denied
+    cooldown: 4
+    str-on-cooldown: "&7&l[아직 미 지정이름] %c초후 다시 사용 가능합니다" 
+    spells:
+        - Jack_[R]
+
+         

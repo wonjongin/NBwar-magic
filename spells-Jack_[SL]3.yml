@@ -1,0 +1,120 @@
+Jack_[SL]3:    
+    spell-class: ".targeted.AreaEffectSpell" 
+
+    horizontal-radius: 10
+
+    vertical-radius: 10
+    
+    target-players: true
+    
+    target-non-players: ture
+    
+    max-targets: 10
+    
+    point-blank: true
+    
+    target-caster: false
+    
+    targer-invisible-players: true
+    
+    fail-if-no-targets: false
+    
+    spell-source-in-center: true
+
+    effects:  
+      1:
+        position: special 
+
+        effect: particles 
+
+        particle-name: lava
+
+        horiz-spread: 1
+
+        vert-spread: 1
+        
+        count: 35
+
+        speed: 0 
+      2:
+        position: special 
+
+        effect: particles 
+
+        particle-name: largesmoke
+
+        horiz-spread: 2
+
+        vert-spread: 2
+        
+        count: 70
+
+        speed: 0
+      3:
+        position: special 
+
+        effect: particles 
+
+        particle-name: smoke
+
+        horiz-spread: 3
+
+        vert-spread: 3
+        
+        count: 60
+
+        speed: 0 
+      4:
+        position: special 
+
+        effect: particles 
+
+        particle-name: lava
+
+        horiz-spread: 4
+
+        vert-spread: 4
+        
+        count: 30
+
+        speed: 0
+      5:
+        position: special 
+
+        effect: particles 
+
+        particle-name: lava
+
+        horiz-spread: 5
+
+        vert-spread: 5
+        
+        count: 55
+
+        speed: 0
+      6:
+        position: special 
+
+        effect: particles 
+
+        particle-name: smoke
+
+        horiz-spread: 6
+
+        vert-spread: 6
+        
+        count: 65
+
+        speed: 0
+      7:
+        position: special
+
+        effect: sound
+        
+        sound: entity.wither.hurt
+        
+        volume: 1.5
+        
+        pitch: -5.0    
+    spells:
+        - Jack_[SL]3_1

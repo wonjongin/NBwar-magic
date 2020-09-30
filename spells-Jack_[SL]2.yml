@@ -1,0 +1,7 @@
+Jack_[SL]2: 
+
+    spell-class: ".targeted.ShadowstepSpell" 
+    
+    range: 20
+
+    relative-offset: -1,0,0 

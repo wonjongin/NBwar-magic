@@ -1,0 +1,20 @@
+Jack_[SS]: 
+    spell-class: ".buff.InvisibilitySpell"
+    toggle: true
+    prevent-pickups: true
+    cancel-on-give-damage: false 
+    cancel-on-logout: true
+    cancel-on-spell-cast: false
+    duration: 5
+    str-fade: "&7&l[ Ripper ] 은신이 풀렸습니다!"
+    effects:     
+      1:
+        position: caster 
+
+        effect: sound
+        
+        sound: entity.wither.hurt
+        
+        volume: 1.0
+        
+        pitch: 0    

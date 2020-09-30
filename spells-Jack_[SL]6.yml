@@ -1,0 +1,63 @@
+Jack_[SL]6:
+    spell-class: ".targeted.AreaEffectSpell"
+    horizontal-radius: 5
+    vertical-radius: 5
+    fail-if-no-targets: false 
+    max-targets: 10
+    spells:
+        - Jack_[SL]6_1
+    effects:
+      1:
+        position: special 
+        effect: particles
+        particle-name: largeexplode
+        horiz-spread: 1
+        vert-spread: 2
+        count: 10
+        speed: 0.1
+      2:
+        position: special 
+        effect: particles
+        particle-name: largesmoke
+        horiz-spread: 2
+        vert-spread: 1
+        count: 25
+        speed: 0.2
+      3:
+        position: special 
+        effect: particles
+        particle-name: lava
+        horiz-spread: 2
+        vert-spread: 2
+        count: 25
+        speed: 0.2     
+      7:
+        position: special
+
+        effect: sound
+        
+        sound: entity.enderdragon.flap
+        
+        volume: 1.5
+        
+        pitch: 1.0           
+      8:
+        position: special
+
+        effect: sound
+        
+        sound: entity.wither.hurt
+        
+        volume: 0.5
+        
+        pitch: 10.0     
+      9:
+        position: special
+
+        effect: sound
+        
+        sound: entity.wither.break_block
+        
+        volume: 0.5
+        
+        pitch: -3.5     
