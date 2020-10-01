@@ -10,7 +10,7 @@ Jack_[R]:
 Jack_[R]_1:
     spell-class: ".instant.LeapSpell"
  
-    forward-velocity: -10
+    forward-velocity: -15
     
     upward-velocity: 2
 
