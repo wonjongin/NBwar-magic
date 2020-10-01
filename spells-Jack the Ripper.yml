@@ -24,7 +24,7 @@ JacktheRipper_[SS]:
     triggers: 
         - stopsneak 
     modifiers: 
-        - holding 276|"&8&lJack &7&lthe &f&lRipper" required 
+        - holding 276|&8&lJack&7&lthe&f&lRipper required 
     spells:
         - Jack_[SS]Dummy
 Jack_[SS]Dummy: 
@@ -37,7 +37,7 @@ Jack_[SS]Passive2:
     triggers: 
         - sneak 
     modifiers: 
-        - holding 276|"&8&lJack &7&lthe &f&lRipper" required 
+        - holding 276|&8&lJack&7&lthe&f&lRipper required 
         - buffactive Jack_[SS]Dummy required 
     spells:
         - Jack_[SS]2

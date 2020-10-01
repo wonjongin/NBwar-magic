@@ -1,7 +1,7 @@
 predefined-items:     
     JacktheRipper:     
         type: "276"     
-        name: "&8&lJack &7&lthe &f&lRipper"     
+        name: "&8&lJack&7&lthe&f&lRipper"     
         lore:    
           - "&8&l한때 런던을 공포에 떨게했던"     
           - "&8&l잭 더 리퍼의 힘이 형상화된 날붙이이다."
