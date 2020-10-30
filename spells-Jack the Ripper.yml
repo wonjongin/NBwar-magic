@@ -1,3 +1,4 @@
+########잭더리퍼 쉬프트좌클릭############
 JacktheRipper_[SL]:
     spell-class: ".MultiSpell"
     cast-item: JacktheRipper
@@ -19,6 +20,7 @@ JacktheRipper_[SL]:
         - Jack_[SL]6
         - DELAY 3
         - Jack_[SL]7
+##############잭더리퍼 쉬프트쉬프트#############
 JacktheRipper_[SS]:
     spell-class: ".PassiveSpell" 
     triggers: 
@@ -29,7 +31,7 @@ JacktheRipper_[SS]:
         - Jack_[SS]Dummy
 Jack_[SS]Dummy: 
     spell-class: ".buff.DummySpell"
-    duration: 0.5
+    duration: 0.1
 Jack_[SS]Passive2: 
     spell-class: ".PassiveSpell"
     cooldown: 10
@@ -42,6 +44,7 @@ Jack_[SS]Passive2:
     spells:
         - Jack_[SS]2
         - Jack_[SS]
+################잭더리퍼 우클릭############
 JacktheRipper_[R]:
     spell-class: ".MultiSpell"
     right-click-cast-item: JacktheRipper
@@ -51,5 +54,8 @@ JacktheRipper_[R]:
     str-on-cooldown: "&7&l[아직 미 지정이름] %c초후 다시 사용 가능합니다" 
     spells:
         - Jack_[R]
+#################잭더리퍼 쉬프트 우클릭#######################
+
+
 
          

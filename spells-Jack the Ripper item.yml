@@ -1,7 +1,9 @@
 predefined-items:     
     JacktheRipper:     
         type: "276"     
-        name: "&8&lJack&7&lthe&f&lRipper"     
+        name: "&8&lJack&7&lthe&f&lRipper"   
+        attributes:
+            attr1: "generic.attackDamage -1 add mainhand"  
         lore:    
           - "&8&l한때 런던을 공포에 떨게했던"     
           - "&8&l잭 더 리퍼의 힘이 형상화된 날붙이이다."
@@ -9,3 +11,14 @@ predefined-items:
           - "&8&l[SS] 주변에 파장을 일으킨뒤 몸을 숨깁니다."
           - "&8&l[SL] 뒤로 이동하여 적을 공격합니다."            
         unbreakable: true           
+#######################명령어구문##################
+JacktheRipper_Conjure:
+    spell-class: ".instant.ConjureSpell"
+    allow-granted: true
+    items:
+        - JacktheRipper
+    incantations:
+        - /잭더리퍼
+    add-to-inventory: true
+    always-granted: true
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l무기&f&l가 지급되었습니다!"

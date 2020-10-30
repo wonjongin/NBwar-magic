@@ -18,3 +18,29 @@ Jack_[SS]:
         volume: 1.0
         
         pitch: 0    
+      2:
+        position: orbit
+        
+        effect: particles
+
+        orbit-radius: 1 
+      
+        orbit-seconds-per-revolution : 1
+
+        orbit-counter-clockwise: true
+        
+        orbit-y-offset : 1
+        
+        orbit-tick-interval: 1
+
+        particle-name: blockcrack_7_0
+        
+        horiz-spread: 0
+        
+        vert-spread: 0
+        
+        speed: 0.0001
+
+        y-offset: 1
+        
+        count: 5

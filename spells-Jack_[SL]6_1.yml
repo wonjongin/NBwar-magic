@@ -2,4 +2,4 @@ Jack_[SL]6_1:
     spell-class: ".targeted.PainSpell"
     check-plugins: true
     damage: 
-    ignore-armor: false
+    ignore-armor: true

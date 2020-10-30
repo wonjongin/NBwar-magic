@@ -3,7 +3,7 @@ Jack_[SL]:
     damage: 
     check-plugins: true
     range: 20 
-    ignore-armor: false 
+    ignore-armor: true
     str-no-target: "&7&l대상이 존재하지 않습니다."
     effects:
       1:
