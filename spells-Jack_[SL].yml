@@ -1,68 +1,72 @@
 Jack_[SL]:    
-    spell-class: ".targeted.PainSpell"  
-    damage: 
-    check-plugins: true
-    range: 20 
-    ignore-armor: true
-    str-no-target: "&7&l대상이 존재하지 않습니다."
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 20
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 2
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: reddust
+    particle-speed: 0.001
+    particle-count: 1
+    particle-horizontal-spread: 0.001
+    particle-vertical-spread: 0.001
+    start-forward-offset: 1
+    start-y-offset: 1
+    max-distance: 10
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[SL]_Damage
+Jack_[SL]2:    
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 20
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 2
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: asd
+    particle-speed: 0
+    particle-count: 1
+    particle-horizontal-spread: 0.01
+    particle-vertical-spread: 0.01
+    start-forward-offset: 1
+    start-y-offset: 1
+    max-distance: 10
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[SL]_Damage
     effects:
       1:
-        position: target
+        position: special
         effect: particles
-        particle-name: largesmoke
-        horiz-spread: 1.5
-        vert-spread: 1.5
-        speed: 0
-        count: 100
-      2: 
-        position: target
-        effect: particles
-        particle-name: largesmoke
-        horiz-spread: 1.5
-        vert-spread: 1.5
-        speed: 0.25
-        count: 50
-      3: 
-        position: target
-        effect: particles
-        particle-name: largesmoke
-        horiz-spread: 1.5
-        vert-spread: 1.5
-        speed: 0.35
-        count: 15
-      4:
-        position: target
-        effect: sound
-        sound: mob.wither.shoot
-        volume: 2.0
-        pitch: 0.8
-      5:
-        position: target
-        effect: sound
-        sound: mob.zombie.woodbreak
-        volume: 2.0
-        pitch: 1.0
-      6:
-        position: target
-        effect: particles
-        particle-name: largeexplode
-        horiz-spread: 0
-        vert-spread: 0
-        y-offset: 0
-        speed: 0
-        count: 1
-      7:
-        position: target
-        effect: sound
-        sound: entity.wither.break_block
-        volume: 1.0
-        pitch: -3.0
-      8: 
-        position: target
-        effect: particles
-        particle-name: lava
-        horiz-spread: 1
-        vert-spread: 1
-        speed: 0.2
-        count: 15
-  
+        particle-name: reddust
+        horiz-spread: -10
+        vert-spread: -10
+        speed: 1
+        count: 0
+        y-offset: 0.2
+Jack_[SL]_Damage:
+  spell-class: ".targeted.PainSpell"
+  check-plugins: true
+  ignore-armor: true
+
+

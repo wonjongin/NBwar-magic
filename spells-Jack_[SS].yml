@@ -15,7 +15,7 @@ Jack_[SS]:
         
         sound: entity.wither.hurt
         
-        volume: 1.0
+        volume: 0.1
         
         pitch: 0    
       2:

@@ -10,6 +10,13 @@ Jack_[SR]_Leap:
     forward-velocity: 10
     
     upward-velocity: 0
+    effects:
+      1:
+        position: caster
+        effect: sound
+        sound: entity.wither.death
+        volume: 0.1
+        pitch: 5.0
 #########검기 묶음############
 Jack_[SR]Sword:
     spell-class: ".MultiSpell"
@@ -209,12 +216,6 @@ Jack_[SR]_Sword_1_0:
         vert-spread: 0
         speed: 0.1
         count: 10
-      2:
-        position: caster
-        effect: sound
-        sound: entity.wolf.growl
-        volume: 1.0
-        pitch: -5.0
 Jack_[SR]_Sword_1_1:
     spell-class: ".instant.ParticleProjectileSpell" 
     projectile-velocity: 20

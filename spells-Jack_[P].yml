@@ -1,0 +1,34 @@
+Jakc_[P]:
+    spell-class: ".PassiveSpell"
+    can-cast-by-command: false 
+    always-granted: true
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l] &0&4&l출혈"
+    triggers:
+        - givedamage 
+    chance: 10
+    modifiers:
+        - holding 276|&8&lJack&7&lthe&f&lRipper required
+    spells:
+        - Jack_[P]_damage
+Jack_[P]_damage:
+    spell-class: ".TargetedMultiSpell"
+    spells:
+        - Jack_[P]__damage
+        - DELAY 1
+        - Jack_[P]__damage 
+
+Jack_[P]__damage:
+    spell-class: ".targeted.PainSpell"
+    damage: 
+    check-plugins: true
+    ignore-armor: false
+    effects:
+      1:
+        position: target 
+        effect: particles
+        particle-name: blockcrack_152_0
+        y-offset: 1.5
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 35

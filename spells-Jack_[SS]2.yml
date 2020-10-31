@@ -1408,7 +1408,7 @@ Jack_[SS]2_36:
         speed: 0.0001
         count: 4
       2:
-        position: target
+        position: caster
         effect: sound
         sound: entity.enderdragon.growl
         volume: 0.1

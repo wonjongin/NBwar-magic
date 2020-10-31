@@ -38,7 +38,7 @@ Jack_[SL]6:
         
         sound: entity.enderdragon.flap
         
-        volume: 1.5
+        volume: 0.1
         
         pitch: 1.0           
       8:
@@ -48,7 +48,7 @@ Jack_[SL]6:
         
         sound: entity.wither.hurt
         
-        volume: 0.5
+        volume: 0.1
         
         pitch: 10.0     
       9:
@@ -58,6 +58,6 @@ Jack_[SL]6:
         
         sound: entity.wither.break_block
         
-        volume: 0.5
+        volume: 0.1
         
         pitch: -3.5     
