@@ -39,10 +39,10 @@ Jack_[SL]2:
     spell-interval: 1
     special-effect-interval: 1
     particle-name: reddust
-    particle-speed: 1
-    particle-count: 1
-    particle-horizontal-spread: 1
-    particle-vertical-spread: 1
+    particle-speed: 0.00000001
+    particle-count: 10
+    particle-horizontal-spread: 0.00005
+    particle-vertical-spread: 0.0000005
     start-forward-offset: 1
     start-y-offset: 1
     max-distance: 10
