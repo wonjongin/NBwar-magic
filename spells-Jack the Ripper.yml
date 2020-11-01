@@ -35,7 +35,7 @@ Jack_[SS]Dummy:
 Jack_[SS]Passive2: 
     spell-class: ".PassiveSpell"
     cooldown: 10
-    str-cast-self: "&7&l[ Ripper ] 몸을 숨깁니다!"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l몸을 숨깁니다!"
     triggers: 
         - sneak 
     modifiers: 

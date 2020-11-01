@@ -38,11 +38,11 @@ Jack_[SL]2:
     tick-interval: 2
     spell-interval: 1
     special-effect-interval: 1
-    particle-name: asd
-    particle-speed: 0
+    particle-name: reddust
+    particle-speed: 1
     particle-count: 1
-    particle-horizontal-spread: 0.01
-    particle-vertical-spread: 0.01
+    particle-horizontal-spread: 1
+    particle-vertical-spread: 1
     start-forward-offset: 1
     start-y-offset: 1
     max-distance: 10
@@ -54,16 +54,6 @@ Jack_[SL]2:
     hit-ground: true
     stop-on-hit-ground: true 
     spell: Jack_[SL]_Damage
-    effects:
-      1:
-        position: special
-        effect: particles
-        particle-name: reddust
-        horiz-spread: -10
-        vert-spread: -10
-        speed: 1
-        count: 0
-        y-offset: 0.2
 Jack_[SL]_Damage:
   spell-class: ".targeted.PainSpell"
   check-plugins: true
