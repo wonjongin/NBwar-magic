@@ -26,7 +26,8 @@ Jack_[SL]:
     hit-ground: true
     stop-on-hit-ground: true 
     spell: Jack_[SL]_Damage
-Jack_[SL]2:    
+
+Jack_[SL]_1:    
     spell-class: ".instant.ParticleProjectileSpell"
     projectile-velocity: 20
     projectile-horiz-offset: 0
@@ -39,10 +40,38 @@ Jack_[SL]2:
     spell-interval: 1
     special-effect-interval: 1
     particle-name: reddust
-    particle-speed: 0.00000001
-    particle-count: 10
-    particle-horizontal-spread: 0.00005
-    particle-vertical-spread: 0.0000005
+    particle-speed: 1
+    particle-count: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    start-forward-offset: 1.1
+    start-y-offset: 1
+    max-distance: 10
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[SL]_Damage        
+Jack_[SL]_2:    
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 20
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 2
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: spell
+    particle-speed: 1
+    particle-count: 0
+    particle-horizontal-spread: 1
+    particle-vertical-spread: 1
     start-forward-offset: 1
     start-y-offset: 1
     max-distance: 10
@@ -54,9 +83,10 @@ Jack_[SL]2:
     hit-ground: true
     stop-on-hit-ground: true 
     spell: Jack_[SL]_Damage
+
 Jack_[SL]_Damage:
   spell-class: ".targeted.PainSpell"
   check-plugins: true
-  ignore-armor: true
+  ignore-armor: false
 
 

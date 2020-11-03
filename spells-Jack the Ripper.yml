@@ -8,18 +8,9 @@ JacktheRipper_[SL]:
     str-on-cooldown: "&7&l[그림자 절단] %c초후 다시 사용 가능합니다"      
     spells:
         - Jack_[SL] 
-        - DELAY 5
-        - Jack_[SL]2
-        - DELAY 10
-        - Jack_[SL]3
-        - DELAY 5
-        - Jack_[SL]4
-        - DELAY 12
-        - Jack_[SL]5
-        - DELAY 10
-        - Jack_[SL]6
-        - DELAY 3
-        - Jack_[SL]7
+        - Jack_[SL]_1
+        - Jack_[SL]_2
+
 ##############잭더리퍼 쉬프트쉬프트#############
 JacktheRipper_[SS]:
     spell-class: ".PassiveSpell" 
