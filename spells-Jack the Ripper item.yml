@@ -18,7 +18,8 @@ JacktheRipper_Conjure:
     items:
         - JacktheRipper
     incantations:
-        - /잭더리퍼
+        - /Jack
+        - /잭
     add-to-inventory: true
     always-granted: true
     str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l무기&f&l가 지급되었습니다!"
