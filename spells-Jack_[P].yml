@@ -5,7 +5,7 @@ Jakc_[P]:
     str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l] &0&4&l출혈"
     triggers:
         - givedamage 
-    chance: 10
+    chance: 50
     modifiers:
         - holding 276|&8&lJack&7&lthe&f&lRipper required
     spells:
