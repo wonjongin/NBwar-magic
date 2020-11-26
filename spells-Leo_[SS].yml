@@ -1,0 +1,4 @@
+Leo_[SS]:
+    spell-class: ".ExternalCommandSpell"
+    command-to-execute: 
+        - "n hl addall %a"

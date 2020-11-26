@@ -6,7 +6,7 @@ Jack_[SS]:
     cancel-on-logout: true
     cancel-on-spell-cast: false
     duration: 5
-    str-fade: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l은신이 풀렸습니다!"
+    str-fade: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l 은신이 풀렸습니다!"
     effects:     
       1:
         position: caster 

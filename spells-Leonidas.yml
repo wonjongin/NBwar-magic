@@ -1,0 +1,23 @@
+#################레오니다스 쉬쉬#################
+Leonidas_[SS]:
+    spell-class: ".PassiveSpell" 
+    triggers: 
+        - stopsneak 
+    modifiers: 
+        - holding 267|&4&lLeo&6&lni&f&ldas required 
+    spells:
+        - Leo_[SS]Dummy
+Leo_[SS]Dummy: 
+    spell-class: ".buff.DummySpell"
+    duration: 0.1
+Leo_[SS]Passive: 
+    spell-class: ".PassiveSpell"
+    cooldown: 10
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l &4&l스파르타&7&l의 &2&l생존능력&7&l이 발휘 됩니다!"
+    triggers: 
+        - sneak 
+    modifiers: 
+        - holding 267|&4&lLeo&6&lni&f&ldas required 
+        - buffactive Leo_[SS]Dummy required 
+    spells:
+        - Leo_[SS]

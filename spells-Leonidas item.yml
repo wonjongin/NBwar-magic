@@ -1,0 +1,26 @@
+predefined-items:     
+    Leonidas:     
+        type: "267"     
+        name: "&4&lLeo&6&lni&f&ldas"   
+        attributes:
+            attr1: "generic.attackDamage 0 add mainhand"  
+        lore:    
+          - "&8&l페르시아군이 침입할때, 테르모필레를 수비한 왕이다."     
+          - "&8&l[P] 극한의 상황에서, 생존능력을 발휘한다."
+          - "&8&l[R] 대지를 내려찍어 상대를 띄운다."
+          - "&8&l[SS] 스파르타의 힘으로 회복한다."
+          - "&8&l[SL] 주변에 있는 대지를 위로 띄웁니다."
+          - "&8&l[SR] 신체 능력을 극한으로 끌어올립니다."            
+        unbreakable: true           
+#######################명령어구문##################
+Leonidas:
+    spell-class: ".instant.ConjureSpell"
+    allow-granted: true
+    items:
+        - Leonidas
+    incantations:
+        - /Le
+        - /레
+    add-to-inventory: true
+    always-granted: true
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l무기&f&l가 지급되었습니다!"
