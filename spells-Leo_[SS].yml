@@ -1,4 +1,178 @@
 Leo_[SS]:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[SS]_effect
+      - Leo_[SS]_dummy
+      - DELAY 60
+      - Leo_[SS]_Command
+Leo_[SS]_Command:
     spell-class: ".ExternalCommandSpell"
     command-to-execute: 
-        - "n hl addall %a"
+        - "n hl f %a"
+Leo_[SS]_dummy:    
+    spell-class: ".buff.DummySpell"    
+    duration: 3
+    effects:
+      1:
+        position: orbit
+        
+        effect: particles
+
+        orbit-radius: 1 
+      
+        orbit-seconds-per-revolution : 1
+
+        orbit-counter-clockwise: true
+        
+        orbit-y-offset : 1
+        
+        orbit-tick-interval: 1
+
+        particle-name: blockcrack_95_14
+        
+        horiz-spread: 0
+        
+        vert-spread: 0
+        
+        speed: 0.0001
+
+        y-offset: 0.5
+        
+        count: 20
+      2:
+        position: orbit
+        
+        effect: particles
+
+        orbit-radius: 1 
+      
+        orbit-seconds-per-revolution : 1
+
+        orbit-counter-clockwise: true
+        
+        orbit-y-offset : 1
+        
+        orbit-tick-interval: 1
+
+        particle-name: dripLava
+        
+        horiz-spread: 0
+        
+        vert-spread: 0
+        
+        speed: 0.0001
+
+        y-offset: 0.5
+        
+        count: 20
+      3:
+        position: orbit
+        
+        effect: particles
+
+        orbit-radius: 1 
+      
+        orbit-seconds-per-revolution : 1
+
+        orbit-counter-clockwise: true
+        
+        orbit-y-offset : 1
+        
+        orbit-tick-interval: 1
+
+        particle-name: blockcrack_95_14
+        
+        horiz-spread: 0
+        
+        vert-spread: 0
+        
+        speed: 0.0001
+
+        y-offset: 0
+        
+        count: 20
+      4:
+        position: orbit
+        
+        effect: particles
+
+        orbit-radius: 1 
+      
+        orbit-seconds-per-revolution : 1
+
+        orbit-counter-clockwise: true
+        
+        orbit-y-offset : 1
+        
+        orbit-tick-interval: 1
+
+        particle-name: dripLava
+        
+        horiz-spread: 0
+        
+        vert-spread: 0
+        
+        speed: 0.0001
+
+        y-offset: 0
+        
+        count: 20
+      5:
+        position: orbit
+        
+        effect: particles
+
+        orbit-radius: 1 
+      
+        orbit-seconds-per-revolution : 1
+
+        orbit-counter-clockwise: true
+        
+        orbit-y-offset : 1
+        
+        orbit-tick-interval: 1
+
+        particle-name: blockcrack_95_14
+        
+        horiz-spread: 0
+        
+        vert-spread: 0
+        
+        speed: 0.0001
+
+        y-offset: -0.5
+        
+        count: 20
+      6:
+        position: orbit
+        
+        effect: particles
+
+        orbit-radius: 1 
+      
+        orbit-seconds-per-revolution : 1
+
+        orbit-counter-clockwise: true
+        
+        orbit-y-offset : 1
+        
+        orbit-tick-interval: 1
+
+        particle-name: dripLava
+        
+        horiz-spread: 0
+        
+        vert-spread: 0
+        
+        speed: 0.0001
+
+        y-offset: -0.5
+        
+        count: 20
+
+Leo_[SS]_effect:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 2
+    strength: 3
+    duration: 60
+    targeted: false
