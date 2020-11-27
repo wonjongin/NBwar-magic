@@ -1,3 +1,38 @@
+Jack_[R]:
+    spell-class: ".MultiSpell"
+    spells:
+        - Jack_[R]Sword
+
+
+
+
+Jack_[R]_Sword_Damage:
+    spell-class: ".targeted.PainSpell"
+    check-plugins: true
+    ignore-armor: false
+Jack_[R]Sword:
+    spell-class: ".MultiSpell"
+    spells:
+      - Jack_[R]_Sword
+      - Jack_[R]_Sword_1
+      - Jack_[R]_Sword_2
+      - Jack_[R]_Sword_3
+      - Jack_[R]_Sword_4
+      - Jack_[R]_Sword_5
+      - Jack_[R]_Sword_6
+      - Jack_[R]_Sword_7
+      - Jack_[R]_Sword_8
+      - Jack_[R]_Sword_9
+      - Jack_[R]_Sword_10
+      - Jack_[R]_Sword_11
+      - Jack_[R]_Sword_12
+      - Jack_[R]_Sword_13
+      - Jack_[R]_Sword_14
+      - Jack_[R]_Sword_15
+      - Jack_[R]_Sword_16
+      - Jack_[R]_Sword_17
+      - Jack_[R]_Sword_18
+
 Jack_[R]_Sword:
     spell-class: ".instant.ParticleProjectileSpell" 
     projectile-velocity: 20
@@ -25,7 +60,676 @@ Jack_[R]_Sword:
     hit-air-at-end: true
     hit-ground: true
     stop-on-hit-ground: true 
-    spell: Jack_[SR]_Sword_Damage
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_1:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 90
+    projectile-vert-offset: -0.9
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_2:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 80
+    projectile-vert-offset: -0.8
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_3:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 70
+    projectile-vert-offset: -0.7
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_4:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 60
+    projectile-vert-offset: -0.6
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_5:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 50
+    projectile-vert-offset: -0.5
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_6:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 40
+    projectile-vert-offset: -0.4
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_7:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 30
+    projectile-vert-offset: -0.3
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_8:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 20
+    projectile-vert-offset: -0.2
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_9:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 10
+    projectile-vert-offset: -0.1
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+
+
+
+Jack_[R]_Sword_10:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 270
+    projectile-vert-offset: 0.9
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_11:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 280
+    projectile-vert-offset: 0.8
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_12:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 290
+    projectile-vert-offset: 0.7
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_13:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 300
+    projectile-vert-offset: 0.6
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_14:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 310
+    projectile-vert-offset: 0.5
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_15:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 320
+    projectile-vert-offset: 0.4
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_16:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 330
+    projectile-vert-offset: 0.3
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_17:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 340
+    projectile-vert-offset: 0.2
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: smoke
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+Jack_[R]_Sword_18:
+    spell-class: ".instant.ParticleProjectileSpell" 
+    projectile-velocity: 20
+    projectile-horiz-offset: 350
+    projectile-vert-offset: 0.1
+    projectile-gravity: 0
+    projectile-spread: 0
+    hug-surface: false 
+    height-from-surface: 1
+    tick-interval: 1
+    spell-interval: 1
+    special-effect-interval: 1
+    particle-name: blockcrack_95_15
+    particle-speed: 0
+    particle-count: 15
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    start-forward-offset: 0.5
+    start-y-offset: 1.5
+    max-distance: 2
+    hit-players: true
+    hit-non-players: true
+    stop-on-hit-entity: false
+    hit-air-during: false
+    hit-air-at-end: true
+    hit-ground: true
+    stop-on-hit-ground: true 
+    spell: Jack_[R]_Sword_Damage
     effects:
       1:
         position: special

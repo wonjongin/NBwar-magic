@@ -42,7 +42,7 @@ JacktheRipper_[R]:
     modifiers:
         - sneaking denied
     cooldown: 4
-    str-on-cooldown: "&7&l[아직 미 지정이름] %c초후 다시 사용 가능합니다" 
+    str-on-cooldown: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l %c 초후 다시 사용가능합니다."  
     spells:
         - Jack_[R]
 #################잭더리퍼 쉬프트 우클릭#######################
