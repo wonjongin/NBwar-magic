@@ -2,6 +2,8 @@ Leo_[SS]:
     spell-class: ".MultiSpell"
     spells:
       - Leo_[SS]_effect
+      - Leo_[SS]_effect_1
+      - Leo_[SS]_effect_2
       - Leo_[SS]_dummy
       - DELAY 60
       - Leo_[SS]_Command
@@ -176,3 +178,17 @@ Leo_[SS]_effect:
     strength: 3
     duration: 60
     targeted: false
+Leo_[SS]_effect_1:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 18
+    strength: 1
+    duration: 60
+    targeted: false
+Leo_[SS]_effect_2:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 4
+    strength: 3
+    duration: 60
+    targeted: false
+
+

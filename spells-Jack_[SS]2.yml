@@ -1420,7 +1420,6 @@ Jack_[SS]2_damage:
     ignore-armor: true
 Jack_[SS]_AddDamge: 
     spell-class: ".targeted.PainSpell"
-    damage: 
     check-plugins: true
-    ignore-armor: true
+    ignore-armor: false
 

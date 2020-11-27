@@ -174,9 +174,8 @@ Jack_[SR]SwordMulti6:
 ##############검기#####################        
 Jack_[SR]_Sword_Damage:
     spell-class: ".targeted.PainSpell"
-    damage: 
     check-plugins: true
-    ignore-armor: true
+    ignore-armor: false
 
 
 Jack_[SR]_Sword_1_0:
