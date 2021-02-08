@@ -1,0 +1,4392 @@
+#########################지진묶음###################################
+Leo_[SL]_Earthquake_Multi:
+    spell-class: ".MultiSpell"  ####지속시간 10초 즉 딜레이 20초당 1초이니까 200
+    spells:
+      - Leo_[SL]_Effect_me
+      - Leo_[SL]_title_1
+      - Leo_[SL]_Ground
+      - Leo_[SL]_Earthquake_2_4_-5
+      - DELAY 6
+      - Leo_[SL]_Earthquake_-1  
+      - Leo_[SL]_Earthquake_4_-4_5
+      - DELAY 4
+      - Leo_[SL]_Earthquake_1
+      - DELAY 3
+      - Leo_[SL]_Earthquake_4  
+      - Leo_[SL]_Earthquake_2.5_-4_-5
+      - DELAY 5
+      - Leo_[SL]_Earthquake_5_5  
+      - DELAY 2   # 1초    
+      - Leo_[SL]_title_2
+      - Leo_[SL]_Earthquake_-4.5
+      - Leo_[SL]_Ground    
+      - DELAY 5
+      - Leo_[SL]_Earthquake_-2.5
+      - DELAY 6      
+      - Leo_[SL]_Earthquake_-1.5_5
+      - DELAY 2
+      - Leo_[SL]_Earthquake_2.5_4_5
+      - DELAY 3      
+      - Leo_[SL]_Earthquake_3_-4_-5
+      - DELAY 2
+      - Leo_[SL]_Earthquake_3
+      - DELAY 2   # 2초      
+      - Leo_[SL]_title_3
+      - Leo_[SL]_Ground
+      - Leo_[SL]_Earthquake_3_5 
+      - Leo_[SL]_Earthquake_-2_5
+      - DELAY 5 
+      - Leo_[SL]_Earthquake_2_5
+      - DELAY 2
+      - Leo_[SL]_Earthquake_-4   
+      - DELAY 1    
+      - Leo_[SL]_Earthquake_-3 
+      - Leo_[SL]_Earthquake_1_5
+      - DELAY 5
+      - Leo_[SL]_Earthquake_3_-4_5
+      - DELAY 4 
+      - Leo_[SL]_Earthquake_4.5_5  
+      - DELAY 3   # 3초
+      - Leo_[SL]_title_4
+      - Leo_[SL]_Ground
+      - Leo_[SL]_Earthquake_3_4_-5 
+      - Leo_[SL]_Earthquake_2_-4_-5
+      - DELAY 4
+      - Leo_[SL]_Earthquake_3.5_4_5
+      - DELAY 3   
+      - Leo_[SL]_Earthquake_1.5_4_-5
+      - DELAY 5   
+      - Leo_[SL]_Earthquake_3.5_-4_5
+      - Leo_[SL]_Earthquake_2.5_-4_5
+      - DELAY 5
+      - Leo_[SL]_Earthquake_1.5
+      - DELAY 3   # 4초 
+      - Leo_[SL]_title_5
+      - Leo_[SL]_Ground
+      - Leo_[SL]_Earthquake_-3.5
+      - Leo_[SL]_Earthquake_4_5
+      - DELAY 5
+      - Leo_[SL]_Earthquake_3.5_4_-5  
+      - Leo_[SL]_Earthquake_1_-4_5
+      - DELAY 5  
+      - Leo_[SL]_Earthquake_-1_5
+      - Leo_[SL]_Earthquake_1.5_-4_-5  
+      - Leo_[SL]_Earthquake_2
+      - DELAY 5      
+      - Leo_[SL]_Earthquake_4_4_-5
+      - DELAY 5   # 5초 
+      - Leo_[SL]_title_6   
+      - Leo_[SL]_Ground
+      - Leo_[SL]_Earthquake_2_-4_5
+      - DELAY 5  
+      - Leo_[SL]_Earthquake_-2
+      - DELAY 7
+      - Leo_[SL]_Earthquake_1.5_-4_5   
+      - Leo_[SL]_Earthquake_1.5_5
+      - DELAY 5 
+      - Leo_[SL]_Earthquake_4_-4_-5
+      - DELAY 3   # 6초 
+      - Leo_[SL]_title_7   
+      - Leo_[SL]_Ground
+      - Leo_[SL]_Earthquake_1.5_4_5 
+      - Leo_[SL]_Earthquake_2.5
+      - DELAY 4     
+      - Leo_[SL]_Earthquake_1_4_-5
+      - DELAY 2         
+      - Leo_[SL]_Earthquake_3_4_5
+      - DELAY 8  
+      - Leo_[SL]_Earthquake_3.5_5
+      - DELAY 6   # 7초 
+      - Leo_[SL]_title_8  
+      - Leo_[SL]_Ground  
+      - Leo_[SL]_Earthquake_3.5_-4_-5  
+      - Leo_[SL]_Earthquake_-4_5  
+      - DELAY 4 
+      - Leo_[SL]_Earthquake_-1.5   
+      - Leo_[SL]_Earthquake_1_4_5
+      - DELAY 6     
+      - Leo_[SL]_Earthquake_5
+      - DELAY 6 
+      - Leo_[SL]_Earthquake_-2.5_5  
+      - DELAY 4   # 8초 
+      - Leo_[SL]_title_9
+      - Leo_[SL]_Ground
+      - Leo_[SL]_Earthquake_2.5_4_-5
+      - DELAY 8      
+      - Leo_[SL]_Earthquake_2_4_5    
+      - DELAY 4
+      - Leo_[SL]_Earthquake_1_-4_-5    
+      - DELAY 6
+      - Leo_[SL]_Earthquake_-3.5_5   
+      - Leo_[SL]_Earthquake_-4.5_5
+      - DELAY 2   # 9초 
+      - Leo_[SL]_title_10    
+      - Leo_[SL]_Ground 
+      - Leo_[SL]_Earthquake_-3_5
+      - DELAY 5 
+      - Leo_[SL]_Earthquake_4_4_5  
+      - Leo_[SL]_Earthquake_3.5
+      - DELAY 10          
+      - Leo_[SL]_Earthquake_-5 
+      - DELAY 5   # 10초  
+      - Leo_[SL]_title_End  
+      - Leo_[SL]_Ground  
+      - Leo_[SL]_Earthquake_4.5    
+#1.Leo_[SL]_Earthquake_1                    o
+#2.Leo_[SL]_Earthquake_1_5                  o
+#3.Leo_[SL]_Earthquake_-1                   o
+#4.Leo_[SL]_Earthquake_-1_5                 o
+#5.Leo_[SL]_Earthquake_1_4_5                o
+#6.Leo_[SL]_Earthquake_1_4_-5               o
+#7.Leo_[SL]_Earthquake_1_-4_5               o
+#8.Leo_[SL]_Earthquake_1_-4_-5              o
+#9.Leo_[SL]_Earthquake_1.5                  o
+#10.Leo_[SL]_Earthquake_1.5_5               o
+#11.Leo_[SL]_Earthquake_-1.5                o
+#12.Leo_[SL]_Earthquake_-1.5_5              o
+#13.Leo_[SL]_Earthquake_1.5_4_5             o
+#14.Leo_[SL]_Earthquake_1.5_4_-5            o
+#15.Leo_[SL]_Earthquake_1.5_-4_5            o
+#16.Leo_[SL]_Earthquake_1.5_-4_-5           o
+
+#17.Leo_[SL]_Earthquake_2                   o
+#18.Leo_[SL]_Earthquake_2_5                 o
+#19.Leo_[SL]_Earthquake_-2                  o
+#20.Leo_[SL]_Earthquake_-2_5                o
+#21.Leo_[SL]_Earthquake_2_4_5               o
+#22.Leo_[SL]_Earthquake_2_4_-5              o
+#23.Leo_[SL]_Earthquake_2_-4_5              o
+#24.Leo_[SL]_Earthquake_2_-4_-5             o
+#25.Leo_[SL]_Earthquake_2.5                 o
+#26.Leo_[SL]_Earthquake_2.5_5               o
+#27.Leo_[SL]_Earthquake_-2.5                o
+#28.Leo_[SL]_Earthquake_-2.5_5              o
+#29.Leo_[SL]_Earthquake_2.5_4_5             o
+#30.Leo_[SL]_Earthquake_2.5_4_-5            o
+#31.Leo_[SL]_Earthquake_2.5_-4_5            o
+#32.Leo_[SL]_Earthquake_2.5_-4_-5           o
+
+#33.Leo_[SL]_Earthquake_3                   o
+#34.Leo_[SL]_Earthquake_3_5                 o
+#35.Leo_[SL]_Earthquake_-3                  o
+#36.Leo_[SL]_Earthquake_-3_5                o
+#37.Leo_[SL]_Earthquake_3_4_5               o 
+#38.Leo_[SL]_Earthquake_3_4_-5              o
+#39.Leo_[SL]_Earthquake_3_-4_5              o
+#40.Leo_[SL]_Earthquake_3_-4_-5             o
+#41.Leo_[SL]_Earthquake_3.5                 o
+#42.Leo_[SL]_Earthquake_3.5_5               o
+#43.Leo_[SL]_Earthquake_-3.5                o
+#44.Leo_[SL]_Earthquake_-3.5_5              o
+#45.Leo_[SL]_Earthquake_3.5_4_5             o
+#46.Leo_[SL]_Earthquake_3.5_4_-5            o
+#47.Leo_[SL]_Earthquake_3.5_-4_5            o
+#48.Leo_[SL]_Earthquake_3.5_-4_-5           o
+
+#49.Leo_[SL]_Earthquake_4                   o
+#50.Leo_[SL]_Earthquake_4_5                 o
+#51.Leo_[SL]_Earthquake_-4                  o
+#52.Leo_[SL]_Earthquake_-4_5                o
+#53.Leo_[SL]_Earthquake_4_4_5               o
+#54.Leo_[SL]_Earthquake_4_4_-5              o
+#55.Leo_[SL]_Earthquake_4_-4_5              o
+#56.Leo_[SL]_Earthquake_4_-4_-5             o
+#57.Leo_[SL]_Earthquake_4.5                 o
+#58.Leo_[SL]_Earthquake_4.5_5               o
+#59.Leo_[SL]_Earthquake_-4.5                o
+#60.Leo_[SL]_Earthquake_-4.5_5              o
+
+#61.Leo_[SL]_Earthquake_5                   o
+#62.Leo_[SL]_Earthquake_5_5                 o
+#63.Leo_[SL]_Earthquake_-5                  o
+#64.Leo_[SL]_Earthquake_-5_5                o
+
+########################타이틀##################################
+Leo_[SL]_title_1:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l10초"
+
+Leo_[SL]_title_2:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l9초"
+
+Leo_[SL]_title_3:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l8초"
+
+Leo_[SL]_title_4:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l7초"     
+
+Leo_[SL]_title_5:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l6초"
+
+Leo_[SL]_title_6:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l5초"
+
+Leo_[SL]_title_7:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l4초"
+
+Leo_[SL]_title_8:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l3초"       
+
+Leo_[SL]_title_9:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l2초"
+
+Leo_[SL]_title_10:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l1초"      
+
+Leo_[SL]_title_End:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l종료"            
+########################데미지##################################
+Leo_[SL]_Damage:
+    spell-class: ".targeted.DotSpell"
+    delay: 5
+    interval: 1
+    duration: 1
+    prevent-knockback: false
+##########################폭발#################################
+Leo_[SL]_Earthquake_high:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: -1.5
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: dripLava
+    particle-speed: 5
+    particle-count: 10
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_152_0
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+      2:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0
+        vert-spread: 0
+        speed: 0.1
+        count: 10
+      3:
+        position: caster 
+        effect: sound
+        sound: entity.irongolem.hurt
+        volume: 1
+        pitch: -1
+      4:
+        position: caster 
+        effect: sound
+        sound: entity.generic.explode
+        volume: 0.5
+        pitch: 0
+#########################지반 1칸###################################
+Leo_[SL]_Earthquake_1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 1
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-1_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -1
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1
+    start-y-offset: 0.1
+    start-z-offset: 1
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1
+    start-y-offset: 0.1
+    start-z-offset: -1
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 0.1
+    start-z-offset: 1
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 0.1
+    start-z-offset: -1
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+#########################지반 1.5칸######################################
+Leo_[SL]_Earthquake_1.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-1.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-1.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1.5_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1.5
+    start-y-offset: 0.1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1.5_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1.5
+    start-y-offset: 0.1
+    start-z-offset: -1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1.5_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1.5
+    start-y-offset: 0.1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_1.5_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1.5
+    start-y-offset: 0.1
+    start-z-offset: -1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+
+#########################지반 2칸###################################
+Leo_[SL]_Earthquake_2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 2
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 2
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -2
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-2_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -2
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 2
+    start-y-offset: 0.1
+    start-z-offset: 2
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 2
+    start-y-offset: 0.1
+    start-z-offset: -2
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -2
+    start-y-offset: 0.1
+    start-z-offset: 2
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -2
+    start-y-offset: 0.1
+    start-z-offset: -2
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+#######################################지반 2.칸###################################
+Leo_[SL]_Earthquake_2.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 2.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 2.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-2.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -2.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-2.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -2.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2.5_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 2.5
+    start-y-offset: 0.1
+    start-z-offset: 2.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2.5_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 2.5
+    start-y-offset: 0.1
+    start-z-offset: -2.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2.5_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -2.5
+    start-y-offset: 0.1
+    start-z-offset: 2.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_2.5_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -2.5
+    start-y-offset: 0.1
+    start-z-offset: -2.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+#######################################지반 3칸 ###################################
+Leo_[SL]_Earthquake_3:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 3
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 3
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-3:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -3
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-3_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -3
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 3
+    start-y-offset: 0.1
+    start-z-offset: 3
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 3
+    start-y-offset: 0.1
+    start-z-offset: -3
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -3
+    start-y-offset: 0.1
+    start-z-offset: 3
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -3
+    start-y-offset: 0.1
+    start-z-offset: -3
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+#######################################지반 3.5칸###################################
+Leo_[SL]_Earthquake_3.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 3.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 3.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-3.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -3.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-3.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -3.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3.5_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 3.5
+    start-y-offset: 0.1
+    start-z-offset: 3.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3.5_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 3.5
+    start-y-offset: 0.1
+    start-z-offset: -3.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3.5_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -3.5
+    start-y-offset: 0.1
+    start-z-offset: 3.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_3.5_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -3.5
+    start-y-offset: 0.1
+    start-z-offset: -3.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+#######################################지반 4칸#####################################
+Leo_[SL]_Earthquake_4:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 4
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 4
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-4:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -4
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -4
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_4_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 4
+    start-y-offset: 0.1
+    start-z-offset: 4
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_4_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 4
+    start-y-offset: 0.1
+    start-z-offset: -4
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_4_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -4
+    start-y-offset: 0.1
+    start-z-offset: 4
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_4_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -4
+    start-y-offset: 0.1
+    start-z-offset: -4
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+#########################################지반 4.5칸 대각선 없음#########################################################################
+Leo_[SL]_Earthquake_4.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 4.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_4.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 4.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-4.5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -4.5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-4.5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -4.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+#########################################대각선 지반 5칸 여기 안씀 이거쓰면 정사각형됨 ###################################################
+Leo_[SL]_Earthquake_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -5
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_-5_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: -5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_5_4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 4
+    start-y-offset: 0.1
+    start-z-offset: 5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_5_4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 4
+    start-y-offset: 0.1
+    start-z-offset: -5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_5_-4_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -4
+    start-y-offset: 0.1
+    start-z-offset: 5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Earthquake_5_-4_-5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -4
+    start-y-offset: 0.1
+    start-z-offset: -5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Earthquake_high
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_213_0
+        horiz-spread: 0.5
+        vert-spread: 0.5
+        speed: 0.1
+        count: 10
+####################################효과 와 데미지#############################################
+Leo_[SL]_Effect&Damage:
+    spell-class: ".TargetedMultiSpell"
+    spells:
+        - Leo_[SL]_Damage
+        - DELAY 1
+        - Leo_[SL]_Effect
+
+Leo_[SL]_damage:
+    spell-class: ".targeted.DotSpell"
+    delay: 1
+    interval: 1
+    duration: 1
+    prevent-knockback: true
+
+Leo_[SL]_Effect:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 2
+    strength: 1
+    duration: 40
+    targeted: true
+
+Leo_[SL]_Effect_me:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 2
+    strength: 2
+    duration: 200
+    targeted: false
+
+##################################지반########################################################
+Leo_[SL]_Ground:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[SL]_Ground_0
+      - Leo_[SL]_Ground_10
+      - Leo_[SL]_Ground_20
+      - Leo_[SL]_Ground_30
+      - Leo_[SL]_Ground_40
+      - Leo_[SL]_Ground_50
+      - Leo_[SL]_Ground_60
+      - Leo_[SL]_Ground_70
+      - Leo_[SL]_Ground_80
+      - Leo_[SL]_Ground_90
+      - Leo_[SL]_Ground_100
+      - Leo_[SL]_Ground_110
+      - Leo_[SL]_Ground_120
+      - Leo_[SL]_Ground_130
+      - Leo_[SL]_Ground_140
+      - Leo_[SL]_Ground_150
+      - Leo_[SL]_Ground_160
+      - Leo_[SL]_Ground_170
+      - Leo_[SL]_Ground_180
+      - Leo_[SL]_Ground_190
+      - Leo_[SL]_Ground_200
+      - Leo_[SL]_Ground_210
+      - Leo_[SL]_Ground_220
+      - Leo_[SL]_Ground_230
+      - Leo_[SL]_Ground_240
+      - Leo_[SL]_Ground_250
+      - Leo_[SL]_Ground_260
+      - Leo_[SL]_Ground_270
+      - Leo_[SL]_Ground_280
+      - Leo_[SL]_Ground_290
+      - Leo_[SL]_Ground_300
+      - Leo_[SL]_Ground_310
+      - Leo_[SL]_Ground_320
+      - Leo_[SL]_Ground_330
+      - Leo_[SL]_Ground_340
+      - Leo_[SL]_Ground_350
+
+Leo_[SL]_Ground_0:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+      2:
+        position: caster 
+        effect: sound
+        sound: block.anvil.hit
+        volume: 1
+        pitch: 1
+Leo_[SL]_Ground_10:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 10
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+
+Leo_[SL]_Ground_20:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 20
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_30:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 30
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_40:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 40
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_50:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 50
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_60:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 60
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_70:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 70
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_80:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 80
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+
+Leo_[SL]_Ground_90:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 90
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_100:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 100
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_110:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 110
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_120:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 120
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_130:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 130
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_140:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 140
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_150:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 150
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_160:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 160
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_170:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 170
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_180:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 180
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_190:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 190
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+
+Leo_[SL]_Ground_200:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 200
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_210:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 210
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_220:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 220
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_230:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 230
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_240:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 240
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_250:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 250
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_260:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 260
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_270:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 270
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_280:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 280
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_290:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 290
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_300:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 300
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_310:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 310
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_320:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 320
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_330:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 330
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+    
+Leo_[SL]_Ground_340:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 340
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10
+
+Leo_[SL]_Ground_350:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    projectile-gravity: 0
+    projectile-horiz-offset: 350
+    projectile-vert-offset: 0
+    particle-name: blockcrack_1_0
+    particle-speed: 0
+    particle-count: 5
+    particle-horizontal-spread: 0.5
+    particle-vertical-spread: 0.5
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 5
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0.1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: true
+    height-from-surface: 0.1
+    spell: Leo_[SL]_Effect&Damage
+    effects:
+      1:
+        position: special
+        effect: particles
+        particle-name: blockcrack_2_0
+        horiz-spread: 0.1
+        vert-spread: 0.1
+        speed: 0.1
+        count: 10

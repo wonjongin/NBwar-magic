@@ -1,0 +1,48 @@
+damagePlayerMenu:
+    spell-class: ".PlayerMenuSpell"
+    always-granted: true
+    title: "L - Smite | R - Teleport"
+    # Menu opens for target. We need the caster to open it here.
+    target-self: true
+    # If false, closes the menu on click.
+    stay-open: true
+    spell-on-left: lightning
+    # Click spells don't have to be specified. If they aren't, that click won't do anything.
+    spell-on-right: teleport
+    # Conditions are checked against the target. If empty or not specified, they aren't checked.
+    player-modifiers: [sneaking deny]
+
+lightning:
+    spell-class: ".targeted.PainSpell"
+    helper-spell: true
+    damage: 5
+    effects:
+      Lightning:
+          position: target
+          effect: lightning
+
+teleport:
+    spell-class: ".targeted.ShadowstepSpell"
+    helper-spell: true
+    distance: 0
+    str-no-landing-spot: "Cannot teleport to that player."
+variables:
+    username: {type: playerstring}
+
+selectPlayerMenu:
+    spell-class: ".PlayerMenuSpell"
+    always-granted: true
+    target-self: true
+    title: "&9Select to teleport"
+    add-opener: true
+    # ExternalCommandSpell extends Targeted, and we don't want it to be treated so.
+    cast-spells-on-target: false
+    spell-on-left: teleport
+    # The value of the string variable can be used in further spells.
+    variable-target: username
+
+teleport:
+    spell-class: ".ExternalCommandSpell"
+    helper-spell: true
+    do-variable-replacement: true
+    command-to-execute: ["minecraft:tp %a %var:username%"]

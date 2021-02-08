@@ -1,0 +1,122 @@
+#####################################주몽 우클릭######################################################
+variables:
+    Ju_[R]:
+        type: player
+        default: 1
+        min: 0
+        max: 5
+        permanent: false
+    JuShift:
+        type: player
+        default: 0
+        min: 0
+        max: 75
+        permanent: false
+
+Ju_[R]_Dummy:
+    spell-class: ".instant.DummySpell" 
+    variable-mods-cast:     
+        - Ju_[R] +1        
+    right-click-cast-item: JuMong  
+
+Ju_[R]_Passive_1:
+    spell-class: ".PassiveSpell"
+    always-granted: true
+    can-cast-by-command: false
+    triggers:
+        - spellcast Ju_[R]_Dummy     
+    modifiers:
+        - variableequals Ju_[R]:1 required    
+    spells:
+        - Ju_[R]_1
+
+Ju_[R]_Passive_2:
+    spell-class: ".PassiveSpell"
+    always-granted: true
+    can-cast-by-command: false
+    triggers:
+        - spellcast Ju_[R]_Dummy     
+    modifiers:
+        - variableequals Ju_[R]:2 required    
+    spells:
+        - Ju_[R]_2
+
+
+
+#####################################주몽 패시브######################################################
+JuMong_[P]:
+    spell-class: ".PassiveSpell"
+    cooldown: 20
+    triggers:
+        - spellcast JuMong_[L]
+    modifiers:
+        - holding 268|&b&lJu&3&lMong required 
+    spells:
+        - Ju_[P]_chain
+
+#####################################주몽 쉬쉬########################################################
+Ju_[SS]_Dummy:
+    spell-class: ".instant.DummySpell"
+
+Ju_[SS]_Cooldown:
+    spell-class: ".PassiveSpell"
+    triggers:
+        - ticks 20
+    variable-mods-cast:
+        - JuShift -1
+    spells:
+        - Ju_[SS]_Dummy
+
+JuMong_[SS]:
+    spell-class: ".PassiveSpell" 
+    triggers: 
+        - stopsneak 
+    modifiers: 
+        - holding 268|&b&lJu&3&lMong required
+        - buffactive Ju_[SS]Dummy denied 
+    spells:
+        - Ju_[SS]Dummy
+Ju_[SS]Dummy: 
+    spell-class: ".buff.DummySpell"
+    duration: 0.2
+Ju_[SS]Passive: 
+    spell-class: ".PassiveSpell"
+    variable-mods-cast:
+        - JuShift +75
+        - Ju_[P] -5
+    triggers: 
+        - sneak 
+    modifiers: 
+        - holding 268|&b&lJu&3&lMong required 
+        - buffactive Ju_[SS]Dummy required 
+        - variablemorethan JuShift:0 castinstead Ju_cool
+        - variableequals Ju_[P]:5 required
+    spells:
+        - Ju_[SS]_Multi
+
+Ju_cool:
+    spell-class: ".instant.DummySpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l[SS] &f&l%var:JuShift:0%초 남았습니다"
+
+
+Ju_[SS]_Multi:
+    spell-class: ".MultiSpell"
+    spells:
+        - Ju_[P]_M_1
+        - DELAY 5
+        - Ju_[P]_M_2
+        - DELAY 5
+        - Ju_[P]_M_3
+        - DELAY 5
+        - Ju_[P]_M_4
+        - DELAY 5
+        - Ju_[P]_M_5
+
+#####################################주몽 좌클릭######################################################
+JuMong_[L]:
+    spell-class: ".MultiSpell"
+    cooldown: 1
+    str-on-cooldown: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l[L] %c초 남았습니다." 
+    cast-item: JuMong
+    spells:
+      - Ju_[L]_shoot

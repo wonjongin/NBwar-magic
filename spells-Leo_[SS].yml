@@ -1,17 +1,89 @@
+############################묶음################################
 Leo_[SS]:
     spell-class: ".MultiSpell"
     spells:
       - Leo_[SS]_effect
       - Leo_[SS]_effect_1
       - Leo_[SS]_effect_2
-      - Leo_[SS]_dummy
-      - DELAY 60
+      - Leo_[SS]_Buffdummy
+      - Leo_[SS]_InstantDummy
+      - Leo_[SS]_title_2
+      - DELAY 20
+      - Leo_[SS]_InstantDummy_2
+      - Leo_[SS]_title_3
+      - DELAY 20
+      - Leo_[SS]_InstantDummy
+      - Leo_[SS]_title_4
+      - DELAY 20
       - Leo_[SS]_Command
+      - Leo_[SS]_title_5
+############################회복###################################
 Leo_[SS]_Command:
     spell-class: ".ExternalCommandSpell"
     command-to-execute: 
         - "n hl f %a"
-Leo_[SS]_dummy:    
+    effects:
+      1:
+        position: caster 
+        effect: sound
+        sound: entity.player.levelup
+        volume: 0.5
+        pitch: -2
+############################더미 타이틀효과###############################
+Leo_[SS]_title_0:
+    spell-class: ".instant.DummySpell"
+    effects:
+      0:
+        position: caster
+        effect: title
+        title: "&0&l[&4&lLeo&6&lni&f&ldas&0&l]"
+        subtitle: "&0&l[&4&l스파르타&8&l의 &2&l생존능력&8&l이 발휘됩니다!&0&l]"
+        fade-in: 5
+        stay: 60
+        fade-out: 5
+Leo_[SS]_title_1:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&4&l스파르타&0&l의 &2&l생존능력&0&l이 발휘됩니다!"
+        broadcast: false    
+Leo_[SS]_title_2:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l3초"
+        broadcast: false    
+Leo_[SS]_title_3:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l2초"
+        broadcast: false    
+Leo_[SS]_title_4:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l1초"
+        broadcast: false            
+Leo_[SS]_title_5:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&a&l회복"
+        broadcast: false  
+
+############################더미이펙트효과###############################         
+Leo_[SS]_Buffdummy:    
     spell-class: ".buff.DummySpell"    
     duration: 3
     effects:
@@ -172,6 +244,59 @@ Leo_[SS]_dummy:
         
         count: 20
 
+
+Leo_[SS]_InstantDummy:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: particles 
+        particle-name: lava
+        vert-spread: 0.01
+        horiz-spread: 0.01
+        speed: 0.1
+        count: 25
+      2:
+        position: caster 
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 0.5
+        pitch: -1
+Leo_[SS]_InstantDummy_1:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: particles 
+        particle-name: lava
+        vert-spread: 0.01
+        horiz-spread: 0.01
+        speed: 0.1
+        count: 25
+      2:
+        position: caster 
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 0.5
+        pitch: -1
+Leo_[SS]_InstantDummy_2:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: particles 
+        particle-name: lava
+        vert-spread: 0.01
+        horiz-spread: 0.01
+        speed: 0.1
+        count: 25
+      2:
+        position: caster 
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 0.5
+        pitch: -1
+############################포션효과###########################
 Leo_[SS]_effect:
     spell-class: ".targeted.PotionEffectSpell"
     type: 2
@@ -190,5 +315,6 @@ Leo_[SS]_effect_2:
     strength: 3
     duration: 60
     targeted: false
+
 
 

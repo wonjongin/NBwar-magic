@@ -1,0 +1,317 @@
+########################묶음#######################
+
+Leo_[P]_5time:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[P]_1time
+      - DELAY 20
+      - Leo_[P]_1time
+      - DELAY 20
+      - Leo_[P]_1time
+      - DELAY 20
+      - Leo_[P]_1time
+      - DELAY 20
+      - Leo_[P]_1time
+
+
+Leo_[P]_1time:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+      - DELAY 2
+      - Leo_[P]_Area
+      - Leo_[P]_InstantDummy
+
+Leo_[P]_title:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[P]_title_5
+      - DELAY 20
+      - Leo_[P]_title_4
+      - DELAY 20
+      - Leo_[P]_title_3
+      - DELAY 20
+      - Leo_[P]_title_2
+      - DELAY 20
+      - Leo_[P]_title_1
+      - DELAY 20
+      - Leo_[P]_title_End
+
+#####################불멸##############################
+Leo_[P]_Athanasia:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[P]_Athanasia_1
+      - Leo_[P]_Athanasia_2
+
+
+Leo_[P]_Athanasia_1:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 10
+    strength: 5
+    duration: 100
+    targeted: false
+
+Leo_[P]_Athanasia_2:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 6
+    strength: 1
+    duration: 0.5
+    targeted: false
+
+####################타이틀###############################
+Leo_[P]_title_5:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l5" 
+
+Leo_[P]_title_4:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l4" 
+
+Leo_[P]_title_3:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l3" 
+
+Leo_[P]_title_2:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l2" 
+
+Leo_[P]_title_1:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l1" 
+
+Leo_[P]_title_End:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l종료" 
+
+#####################범위#############################
+Leo_[P]_Area: 
+    spell-class: ".targeted.AreaEffectSpell" 
+    horizontal-radius: 3.5 # 가로 범위
+    vertical-radius: 3.5 # 세로 범위
+    max-targets: 99
+    spells: 
+      - Leo_[P]_forcetoss # 연계될 스펠
+
+######################밀쳐내기#########################
+Leo_[P]_forcetoss:     
+    spell-class: ".targeted.ForcetossSpell"     
+    horizontal-force: 10     #앞(-면 반대)
+    vertical-force: 5     #위(-면 반대)
+    effects:
+      1:
+        position: target
+        effect: particles 
+        particle-name: lava
+        vert-spread: 0.1
+        horiz-spread: 0.1
+        speed: 0.1
+        count: 25
+      2:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "1"
+            zEquation: "1cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 100
+            cycle: false
+            color: 450500
+            orient: false
+      3:
+        position: caster 
+        effect: sound
+        sound: entity.generic.explode
+        volume: 0.5
+        pitch: 1.5
+######################이펙트###########################
+Leo_[P]_InstantDummy:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2sin(t)"
+            yEquation: "0"
+            zEquation: "2cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 7a3d38
+            orient: false
+      2:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2.1sin(t)"
+            yEquation: "0"
+            zEquation: "2.1cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 9c1e14
+            orient: false
+      3:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2.2sin(t)"
+            yEquation: "0"
+            zEquation: "2.2cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e3a49f
+            orient: false
+      4:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2sin(t)"
+            yEquation: "0.1"
+            zEquation: "2cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 7a3d38
+            orient: false
+      5:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2.1sin(t)"
+            yEquation: "0.1"
+            zEquation: "2.1cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 9c1e14
+            orient: false
+      6:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2.2sin(t)"
+            yEquation: "0.1"
+            zEquation: "2.2cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e3a49f
+            orient: false
+      7:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2sin(t)"
+            yEquation: "0.2"
+            zEquation: "2cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 7a3d38
+            orient: false
+      8:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2.1sin(t)"
+            yEquation: "0.2"
+            zEquation: "2.1cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 9c1e14
+            orient: false
+      9:
+        position: caster
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "2.2sin(t)"
+            yEquation: "0.2"
+            zEquation: "2.2cos(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e3a49f
+            orient: false
+      10:
+        position: caster 
+        effect: sound
+        sound: block.fire.extinguish
+        volume: 0.5
+        pitch: 2

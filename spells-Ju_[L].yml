@@ -1,0 +1,179 @@
+###########################데미지########################################
+Ju_[L]_Dot:
+    spell-class: ".targeted.DotSpell"
+    delay: 1
+    interval: 1
+    duration: 1
+    prevent-knockback: false
+###########################묶음##########################################
+Ju_[L]_shoot:
+    spell-class: ".MultiSpell"
+    spells:
+      - Ju_[L]_shoot_1
+      - Ju_[L]_shoot_2
+    #   1:
+    #     position: special
+    #     effect: effectlib
+    #     effectlib:
+    #         class: EquationEffect
+    #         xEquation: "0.1t"
+    #         yEquation: "0"
+    #         zEquation: "0.02(t - 150)sin(0.1t - 15)"
+    #         x2Equation: "0.1t" 
+    #         y2Equation: "0.02(t - 150)sin(0.1t - 15)"
+    #         z2Equation: "0"
+    #         duration: 150
+    #         particle: redstone
+    #         color: 3866b0
+    #         particles: 50
+    #         cycle: true
+    #         orient: true
+###########################좌클릭########################################
+Ju_[L]_shoot_1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 40
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0.2
+    particle-vertical-spread: 0.2
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 15
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: Ju_[L]_Dot
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "0"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5999ff
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "0"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 3d5375
+            orient: true
+Ju_[L]_shoot_2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 30
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0.2
+    particle-vertical-spread: 0.2
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: NONE
+    effects:
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.02t"
+            yEquation: "(1 - 0.0015t)sin(0.0314t)" 
+            zEquation: "(1 - 0.0015t)cos(0.0314t)"
+            x2Equation: "0" 
+            y2Equation: "0"
+            z2Equation: "0"
+            duration: 700
+            particle: redstone
+            color: 183f52
+            particles: 50
+            cycle: true
+            orient: true
+      2:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.02t"
+            yEquation: "(1 - 0.001t)sin(0.0314t)" 
+            zEquation: "(1 - 0.001t)cos(0.0314t)"
+            x2Equation: "0" 
+            y2Equation: "0"
+            z2Equation: "0"
+            duration: 700
+            particle: redstone
+            color: 244d8f
+            particles: 50
+            cycle: true
+            orient: true
+      3:
+        position: special
+        effect: sound
+        sound: entity.wither.hurt
+        volume: 0.5
+        pitch: 2
+      4:
+        position: special
+        effect: sound
+        sound: entity.endermite.step
+        volume: 2
+        pitch: 3
+
+#      2:
+#        position: special 
+#        effect: effectlib
+#        effectlib: 
+#            class: EquationEffect
+#            xEquation: "0.5tan(t)"
+#            yEquation: "0.5sin(t)"
+#            zEquation: "0.5cos(t)"
+#            duration: 100
+#            particle: redstone
+#            particles: 50
+#            cycle: false
+#            color: 3866b0
+#            orient: true
+

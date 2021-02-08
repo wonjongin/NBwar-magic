@@ -1,0 +1,1480 @@
+#######################타이틀###########################
+Leo_[R]_title_1:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l1타" 
+
+Leo_[R]_title_2:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l2타"
+#######################묶음##############################
+Leo_[R]_Shield_1:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[R]_Shield_0_Right
+      - Leo_[R]_Leap
+      - DELAY 1
+      - Leo_[R]_Shield_1_Right
+      - DELAY 1
+      - Leo_[R]_Leap_1
+      - Leo_[R]_Shield_4_Right
+
+Leo_[R]_Jump:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[R]_Leap_2
+
+Leo_[R]_Shield_2:
+    spell-class: ".MultiSpell"
+    spells:
+      - Leo_[R]_Shield_0_front
+      - Leo_[R]_Leap_4
+      - DELAY 1
+      - Leo_[R]_Shield_0_front
+      - Leo_[R]_Leap_4
+      - DELAY 1
+      - Leo_[R]_Shield_0_front
+      - Leo_[R]_Leap_3
+      - DELAY 1
+      - Leo_[R]_Shield_1_front
+      - DELAY 2
+      - Leo_[R]_Shield_2_front
+
+#####################돌진&띄우기################################
+Leo_[R]_Leap:
+    spell-class: ".instant.LeapSpell"     
+    forward-velocity: 10   
+    upward-velocity: -1
+    cancel-damage: true       
+    effects:
+      1:
+        position: caster 
+        effect: sound
+        sound: block.grass.break
+        volume: 1
+        pitch: -1
+
+Leo_[R]_Leap_1:
+    spell-class: ".instant.LeapSpell"     
+    forward-velocity: 10   
+    upward-velocity: -1
+    cancel-damage: true    
+    effects:
+      1:
+        position: caster 
+        effect: sound
+        sound: block.grass.break
+        volume: 1
+        pitch: -1
+
+Leo_[R]_Leap_2:
+    spell-class: ".instant.LeapSpell"     
+    forward-velocity: 1    
+    upward-velocity: 10
+    cancel-damage: true       
+    effects:
+      1:
+        position: caster 
+        effect: sound
+        sound: entity.wither.shoot
+        volume: 0.5
+        pitch: 0
+      2:
+        position: caster 
+        effect: sound
+        sound: entity.wither.hurt
+        volume: 0.5
+        pitch: 1
+      3:
+        position: caster 
+        effect: sound
+        sound: entity.enderdragon.wings
+        volume: 1
+        pitch: 0
+
+Leo_[R]_Leap_3:
+    spell-class: ".instant.LeapSpell"     
+    forward-velocity: 3    
+    upward-velocity: -10
+    cancel-damage: true  
+    effects:
+      1:
+        position: caster 
+        effect: sound
+        sound: entity.generic.explode
+        volume: 0.5
+        pitch: 1
+
+Leo_[R]_Leap_4:
+    spell-class: ".instant.LeapSpell"     
+    forward-velocity: 2    
+    upward-velocity: -15
+    cancel-damage: true 
+    effects:
+      1:
+        position: caster 
+        effect: sound
+        sound: entity.generic.explode
+        volume: 0.5
+        pitch: 1
+
+Leo_[R]_forcetoss:     
+    spell-class: ".targeted.ForcetossSpell"     
+    horizontal-force: 5     #앞(-면 반대)
+    vertical-force: 7   #위(-면 반대)
+
+#####################데미지###############################
+Leo_[R]_Damage_Dot:
+    spell-class: ".targeted.DotSpell"
+    delay: 1
+    interval: 1
+    duration: 1
+    prevent-knockback: false
+
+Leo_[R]_Damage_Area:
+    spell-class: ".targeted.AreaEffectSpell" 
+    horizontal-radius: 5 # 가로 범위
+    vertical-radius: 3 # 세로 범위
+    max-targets: 99
+    spells: 
+      - Leo_[R]_Damage_Dot
+      - Leo_[R]_forcetoss
+
+Leo_[R]_TargetMulti:
+    spell-class: ".TargetedMultiSpell"
+    spells:
+      - Leo_[R]_Damage_Area
+
+Leo_[R]_Damage_Area_1:
+    spell-class: ".targeted.AreaEffectSpell" 
+    horizontal-radius: 3 # 가로 범위
+    vertical-radius: 3 # 세로 범위
+    max-targets: 99
+    spells: 
+      - Leo_[R]_Damage_Dot
+    effects:
+      1:
+        position: special
+        effect: particles 
+        particle-name: blockcrack_2_0
+        vert-spread: 0.5
+        horiz-spread: 0.5
+        speed: 0.1
+        count: 20
+      2:
+        position: special
+        effect: particles 
+        particle-name: blockcrack_1_0
+        vert-spread: 0.5
+        horiz-spread: 0.5
+        speed: 0.1
+        count: 20
+
+Leo_[R]_TargetMulti_1:
+    spell-class: ".TargetedMultiSpell"
+    spells:
+      - Leo_[R]_Damage_Area_1
+      - Leo_[R]_Stun
+######################방패 앞쪽#################################
+Leo_[R]_Shield_0_front:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1.5
+    start-y-offset: 1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: ddddddd
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6cos(t)"
+            yEquation: "0"
+            zEquation: "0.6sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5cos(t)"
+            yEquation: "0"
+            zEquation: "0.5sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4cos(t)"
+            yEquation: "0"
+            zEquation: "0.4sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3cos(t)"
+            yEquation: "0"
+            zEquation: "0.3sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2cos(t)"
+            yEquation: "0"
+            zEquation: "0.2sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            xEquation: "0.1cos(t)"
+            yEquation: "0"
+            zEquation: "0.1sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            xEquation: "0"
+            yEquation: "0"
+            zEquation: "0"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true          
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.7sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.8sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      9:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.9sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+
+Leo_[R]_Shield_1_front:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1.5
+    start-y-offset: 0.6
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: ddddddd
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6cos(t)"
+            yEquation: "0"
+            zEquation: "0.6sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5cos(t)"
+            yEquation: "0"
+            zEquation: "0.5sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4cos(t)"
+            yEquation: "0"
+            zEquation: "0.4sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3cos(t)"
+            yEquation: "0"
+            zEquation: "0.3sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2cos(t)"
+            yEquation: "0"
+            zEquation: "0.2sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            xEquation: "0.1cos(t)"
+            yEquation: "0"
+            zEquation: "0.1sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            xEquation: "0"
+            yEquation: "0"
+            zEquation: "0"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true          
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.7sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.8sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      9:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.9sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+
+Leo_[R]_Shield_2_front:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1.5
+    start-y-offset: 0.3
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: Leo_[R]_TargetMulti_1
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6cos(t)"
+            yEquation: "0"
+            zEquation: "0.6sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5cos(t)"
+            yEquation: "0"
+            zEquation: "0.5sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4cos(t)"
+            yEquation: "0"
+            zEquation: "0.4sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3cos(t)"
+            yEquation: "0"
+            zEquation: "0.3sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2cos(t)"
+            yEquation: "0"
+            zEquation: "0.2sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            xEquation: "0.1cos(t)"
+            yEquation: "0"
+            zEquation: "0.1sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            xEquation: "0"
+            yEquation: "0"
+            zEquation: "0"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true          
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.7sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.8sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      9:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9cos(t)"
+            yEquation: "-0.1"
+            zEquation: "0.9sin(t)"
+            duration: 200
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+
+######################방패오른쪽################################
+Leo_[R]_Shield_0_Right:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: ddddddd
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6sin(t)"
+            yEquation: "0.6cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5sin(t)"
+            yEquation: "0.5cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4sin(t)"
+            yEquation: "0.4cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3sin(t)"
+            yEquation: "0.3cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2sin(t)"
+            yEquation: "0.2cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.1sin(t)"
+            yEquation: "0.1cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7sin(t)"
+            yEquation: "0.7cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8sin(t)"
+            yEquation: "0.8cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9sin(t)"
+            yEquation: "0.9cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+Leo_[R]_Shield_1_Right:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0.1
+    start-y-offset: 1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: ddddddd
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6sin(t)"
+            yEquation: "0.6cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5sin(t)"
+            yEquation: "0.5cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4sin(t)"
+            yEquation: "0.4cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3sin(t)"
+            yEquation: "0.3cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2sin(t)"
+            yEquation: "0.2cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.1sin(t)"
+            yEquation: "0.1cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7sin(t)"
+            yEquation: "0.7cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8sin(t)"
+            yEquation: "0.8cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9sin(t)"
+            yEquation: "0.9cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+Leo_[R]_Shield_2_Right:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0.2
+    start-y-offset: 1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: ddddddd
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6sin(t)"
+            yEquation: "0.6cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5sin(t)"
+            yEquation: "0.5cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4sin(t)"
+            yEquation: "0.4cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3sin(t)"
+            yEquation: "0.3cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2sin(t)"
+            yEquation: "0.2cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.1sin(t)"
+            yEquation: "0.1cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7sin(t)"
+            yEquation: "0.7cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8sin(t)"
+            yEquation: "0.8cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9sin(t)"
+            yEquation: "0.9cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+Leo_[R]_Shield_3_Right:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0.5
+    start-y-offset: 1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: ddddddd
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6sin(t)"
+            yEquation: "0.6cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5sin(t)"
+            yEquation: "0.5cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4sin(t)"
+            yEquation: "0.4cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3sin(t)"
+            yEquation: "0.3cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2sin(t)"
+            yEquation: "0.2cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.1sin(t)"
+            yEquation: "0.1cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7sin(t)"
+            yEquation: "0.7cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8sin(t)"
+            yEquation: "0.8cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9sin(t)"
+            yEquation: "0.9cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+Leo_[R]_Shield_4_Right:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 1
+    start-y-offset: 1
+    start-z-offset: 1.5
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: true
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: Leo_[R]_TargetMulti
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.6sin(t)"
+            yEquation: "0.6cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.5sin(t)"
+            yEquation: "0.5cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: e6d849
+            orient: true
+      2:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.4sin(t)"
+            yEquation: "0.4cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf53
+            orient: true
+      3:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.3sin(t)"
+            yEquation: "0.3cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: ebde60
+            orient: true
+      4:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.2sin(t)"
+            yEquation: "0.2cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: eddf58
+            orient: true
+      5:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.1sin(t)"
+            yEquation: "0.1cos(t)"
+            zEquation: "0"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: dbcc35
+            orient: true
+      6:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.7sin(t)"
+            yEquation: "0.7cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 877b00
+            orient: true
+      7:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.8sin(t)"
+            yEquation: "0.8cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: a89a05
+            orient: true
+      8:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0.9sin(t)"
+            yEquation: "0.9cos(t)"
+            zEquation: "-0.1"
+            duration: 100
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: b5a714
+            orient: true
+
+######################스턴#################################
+Leo_[R]_Stun:
+    spell-class: ".targeted.StunSpell"
+    duration: 1
+    target-self: false   #거짓이면 상대방, 참은 나
+    effects:
+      1:
+        position: target
+        effect: particles 
+        particle-name: driplava
+        vert-spread: 0.5
+        horiz-spread: 0.5
+        speed: 0.1
+        count: 25

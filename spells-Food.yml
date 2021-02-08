@@ -1,0 +1,37 @@
+###################################아아템#######################################
+predefined-items:     
+    FoodFood!:     
+        type: "364"     
+        name: "&c&lFood"   
+        attributes:
+            attr1: "generic.attackDamage -1 add mainhand"  
+        lore:    
+          - "&8&l음식,음식!!" 
+###################################명령어#######################################
+FoodFood!:
+    spell-class: ".instant.ConjureSpell"
+    allow-granted: true
+    items:
+        - Food
+    incantations:
+        - /Food
+        - /음식
+    add-to-inventory: true
+    always-granted: true
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l음식&f&l이 지급되었습니다!" 
+
+###################################배고픔#######################################
+Food_Passive:
+    spell-class: ".PassiveSpell"
+    triggers:
+        - ticks 20    
+    modifiers:
+        - hasitem 364|&c&lFood required
+    spells:
+        - Food_Food
+
+
+Food_Food:   
+    spell-class: ".instant.FoodSpell"
+    food: 2
+    saturation: 3.5

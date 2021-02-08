@@ -18,10 +18,11 @@ Jack_[P]_damage:
         - Jack_[P]__damage 
 
 Jack_[P]__damage:
-    spell-class: ".targeted.PainSpell"
-    damage: 
-    check-plugins: true
-    ignore-armor: false
+    spell-class: ".targeted.DotSpell"
+    delay: 1
+    interval: 1
+    duration: 1
+    prevent-knockback: true
     effects:
       1:
         position: target 

@@ -1,15 +1,19 @@
-Jack_[R]:
+###########################멀티###########################
+Jack_[R]_1:
     spell-class: ".MultiSpell"
     spells:
         - Jack_[R]Sword
+        - Jack_[R]Leap
+        - Jack_[R]Mark
 
 
-
-
+############################검########################
 Jack_[R]_Sword_Damage:
-    spell-class: ".targeted.PainSpell"
-    check-plugins: true
-    ignore-armor: false
+    spell-class: ".targeted.DotSpell"
+    delay: 5
+    interval: 1
+    duration: 2
+    prevent-knockback: true
 Jack_[R]Sword:
     spell-class: ".MultiSpell"
     spells:
@@ -739,3 +743,18 @@ Jack_[R]_Sword_18:
         vert-spread: 0
         speed: 0.1
         count: 10
+##########################대쉬###########################
+Jack_[R]Leap:
+    spell-class: ".instant.LeapSpell"
+    
+    forward-velocity: -15
+    
+    upward-velocity: 1.5
+
+
+Jack_[R]Leap_2:
+    spell-class: ".instant.LeapSpell"
+    
+    forward-velocity: 15
+    
+    upward-velocity: 1.5

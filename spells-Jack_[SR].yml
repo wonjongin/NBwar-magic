@@ -20,9 +20,6 @@ Jack_[SR]_Leap:
 #########검기 묶음############
 Jack_[SR]Sword:
     spell-class: ".MultiSpell"
-    right-click-cast-item: JacktheRipper
-    modifiers:
-        - sneaking required
     spells:
         - Jack_[SR]SwordMMulti
         - DELAY 5
@@ -55,15 +52,18 @@ Jack_[SR]SwordMulti:
         - Jack_[SR]_Sword_1_3
         - Jack_[SR]_Sword_1_4
         - Jack_[SR]_Sword_1_5
+        - DELAY 2
         - Jack_[SR]_Sword_1_6
         - Jack_[SR]_Sword_1_7
         - Jack_[SR]_Sword_1_8
         - Jack_[SR]_Sword_1_9
+        - DELAY 2
         - Jack_[SR]_Sword_1_350
         - Jack_[SR]_Sword_1_340
         - Jack_[SR]_Sword_1_330
         - Jack_[SR]_Sword_1_320
         - Jack_[SR]_Sword_1_310
+        - DELAY 2
         - Jack_[SR]_Sword_1_300
         - Jack_[SR]_Sword_1_290
         - Jack_[SR]_Sword_1_280
@@ -80,9 +80,11 @@ Jack_[SR]SwordMulti2:
         - Jack_[SR]_Sword_2_2
         - Jack_[SR]_Sword_2_3
         - Jack_[SR]_Sword_2_4
+        - DELAY 2
         - Jack_[SR]_Sword_2_5
         - Jack_[SR]_Sword_2_350
         - Jack_[SR]_Sword_2_340
+        - DELAY 2
         - Jack_[SR]_Sword_2_330
         - Jack_[SR]_Sword_2_320
         - Jack_[SR]_Sword_2_310
@@ -97,12 +99,14 @@ Jack_[SR]SwordMulti3:
         - Jack_[SR]_Sword_3_1
         - Jack_[SR]_Sword_3_2
         - Jack_[SR]_Sword_3_3
+        - DELAY 2
         - Jack_[SR]_Sword_3_4
         - Jack_[SR]_Sword_3_5
         - Jack_[SR]_Sword_3_350
         - Jack_[SR]_Sword_3_340
         - Jack_[SR]_Sword_3_330
         - Jack_[SR]_Sword_3_320
+        - DELAY 2
         - Jack_[SR]_Sword_3_310
         - Jack_[SR]_Sword_3_300
   
@@ -118,11 +122,13 @@ Jack_[SR]SwordMulti4:
         - Jack_[SR]_Sword_4_3
         - Jack_[SR]_Sword_4_4
         - Jack_[SR]_Sword_4_5
+        - DELAY 2
         - Jack_[SR]_Sword_4_6
         - Jack_[SR]_Sword_4_7
         - Jack_[SR]_Sword_4_8
         - Jack_[SR]_Sword_4_9
         - Jack_[SR]_Sword_4_10
+        - DELAY 2
         - Jack_[SR]_Sword_4_11
         - Jack_[SR]_Sword_4_12
         - Jack_[SR]_Sword_4_13
@@ -147,6 +153,7 @@ Jack_[SR]SwordMulti5:
         - Jack_[SR]_Sword_5_3
         - Jack_[SR]_Sword_5_4
         - Jack_[SR]_Sword_5_5
+        - DELAY 2
         - Jack_[SR]_Sword_5_350
         - Jack_[SR]_Sword_5_340
         - Jack_[SR]_Sword_5_330
@@ -161,10 +168,12 @@ Jack_[SR]SwordMulti6:
         - DELAY 2   
         - Jack_[SR]_Sword_6_0
         - Jack_[SR]_Sword_6_1
+        - DELAY 2
         - Jack_[SR]_Sword_6_2
         - Jack_[SR]_Sword_6_3
         - Jack_[SR]_Sword_6_4
         - Jack_[SR]_Sword_6_5
+        - DELAY 2
         - Jack_[SR]_Sword_6_350
         - Jack_[SR]_Sword_6_340
         - Jack_[SR]_Sword_6_330
@@ -173,9 +182,11 @@ Jack_[SR]SwordMulti6:
         - Jack_[SR]_Sword_6_300
 ##############검기#####################        
 Jack_[SR]_Sword_Damage:
-    spell-class: ".targeted.PainSpell"
-    check-plugins: true
-    ignore-armor: false
+    spell-class: ".targeted.DotSpell"
+    delay: 5
+    interval: 1
+    duration: 2
+    prevent-knockback: true
 
 
 Jack_[SR]_Sword_1_0:

@@ -12,6 +12,26 @@ JacktheRipper_[SL]:
         - Jack_[SL]_2
 
 ##############잭더리퍼 쉬프트쉬프트#############
+variables:
+    JackShift:
+        type: player
+        default: 0
+        min: 0
+        max: 50
+        permanent: false
+
+Jack_[SS]_Dummy:
+    spell-class: ".instant.DummySpell"
+
+Jack_[SS]_Cooldown:
+    spell-class: ".PassiveSpell"
+    triggers:
+        - ticks 20
+    variable-mods-cast:
+        - JackShift -1
+    spells:
+        - Jack_[SS]_Dummy
+
 JacktheRipper_[SS]:
     spell-class: ".PassiveSpell" 
     triggers: 
@@ -22,29 +42,33 @@ JacktheRipper_[SS]:
         - Jack_[SS]Dummy
 Jack_[SS]Dummy: 
     spell-class: ".buff.DummySpell"
-    duration: 0.1
+    duration: 0.2
+
 Jack_[SS]Passive2: 
     spell-class: ".PassiveSpell"
-    cooldown: 10
-    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l 몸을 숨깁니다!"
     triggers: 
         - sneak 
+    variable-mods-cast:
+        - JackShift +60
     modifiers: 
         - holding 276|&8&lJack&7&lthe&f&lRipper required 
         - buffactive Jack_[SS]Dummy required 
+        - variablemorethan JackShift:0 castinstead Jack_cool
     spells:
         - Jack_[SS]2
         - Jack_[SS]
+
+Jack_cool:
+    spell-class: ".instant.DummySpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l[SS] &f&l%var:JackShift:0%초 남았습니다"
 ################잭더리퍼 우클릭############
 JacktheRipper_[R]:
     spell-class: ".MultiSpell"
     right-click-cast-item: JacktheRipper
-    modifiers:
-        - sneaking denied
-    cooldown: 4
-    str-on-cooldown: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l %c 초후 다시 사용가능합니다."  
     spells:
-        - Jack_[R]
+        - Jack_[R]_1
+    modifiers:
+        - sneaking castinstead Jack_[SR]Sword
 #################잭더리퍼 쉬프트 우클릭#######################
 
 

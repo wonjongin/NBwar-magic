@@ -1,0 +1,223 @@
+#####################################그랩 발사!#############################################
+Grip_shoot:
+    spell-class: ".instant.ParticleProjectileSpell"
+    cast-item: Grip
+    projectile-velocity: 25
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0
+    particle-vertical-spread: 0
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 10
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 1
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: true
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: Grip_TargetMulti
+    effects:
+      0:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "0"
+            zEquation: "0"
+            duration: 10
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 8100a8
+            orient: true
+      1:
+        position: special 
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "0"
+            zEquation: "0"
+            duration: 10
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5a2b69
+            orient: true
+      2:
+        position: special
+        effect: sound
+        sound: entity.irongolem.death
+        volume: 1
+        pitch: -1
+
+###################################그랩 속박####################################################
+Grip_Stun:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 2
+    strength: 3
+    duration: 40
+    targeted: true
+
+###################################그랩 멀티###################################################
+Grip_TargetMulti:
+    spell-class: ".TargetedMultiSpell"
+    spells:
+      - Grip_forcetoss
+      - Grip_Stun
+      - DELAY 1
+      - Grip_forcetoss
+      - DELAY 1
+      - Grip_forcetoss
+      - DELAY 1
+      - Grip_forcetoss
+      - DELAY 1
+      - Grip_forcetoss
+      - DELAY 1
+      - Grip_forcetoss
+      - DELAY 10   
+###################################그랩 당겨!##################################################
+Grip_forcetoss:     
+    spell-class: ".targeted.ForcetossSpell"     
+    horizontal-force: -8
+    vertical-force: 2
+    effects:
+      0:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "1"
+            zEquation: "1cos(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 8100a8
+            orient: false
+      1:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "0"
+            zEquation: "1cos(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 8100a8
+            orient: false
+      2:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "2"
+            zEquation: "1cos(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 8100a8
+            orient: false
+      3:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "1.1"
+            zEquation: "1cos(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5a2b69
+            orient: false
+      4:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "0.1"
+            zEquation: "1cos(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5a2b69
+            orient: false
+      5:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "1.9"
+            zEquation: "1cos(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5a2b69
+            orient: false
+      6:
+        position: target
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "1sin(t)"
+            yEquation: "0.9"
+            zEquation: "1cos(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5a2b69
+            orient: false
+      7:
+        position: line
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0sin(t)"
+            yEquation: "0cos(t) + 1"
+            zEquation: "0tan(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5a2b69
+            orient: true
+      8:
+        position: line
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0sin(t)"
+            yEquation: "0cos(t) + 1"
+            zEquation: "0tan(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 8100a8
+            orient: true

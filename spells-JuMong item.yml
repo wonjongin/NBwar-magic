@@ -1,0 +1,27 @@
+#######################아이템##################################
+predefined-items:     
+    JuMong:     
+        type: "268"     
+        name: "&b&lJu&3&lMong"   
+        attributes:
+            attr1: "generic.attackDamage 0 add mainhand"  
+        lore:    
+          - "&8&l고구려의 시조왕인 주몽,추모라고도 불린다."     
+          - "&8&l[P] "
+          - "&8&l[R] "
+          - "&8&l[SS] "
+          - "&8&l[SL] "
+          - "&8&l[SR] "            
+        unbreakable: true          
+#######################명령어구문##################
+JuMong:
+    spell-class: ".instant.ConjureSpell"
+    allow-granted: true
+    items:
+        - JuMong
+    incantations:
+        - /Ju
+        - /주
+    add-to-inventory: true
+    always-granted: true
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l무기&f&l가 지급되었습니다!" 

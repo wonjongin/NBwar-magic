@@ -1,0 +1,22 @@
+##########################아이템####################################
+predefined-items:     
+    Grip:     
+        type: "266"     
+        name: "&5&lG&d&lrip"   
+        attributes:
+            attr1: "generic.attackDamage -1 add mainhand"  
+        lore:    
+          - "&8&l일루와!"                
+        unbreakable: true          
+#######################명령어구문##################
+Grip:
+    spell-class: ".instant.ConjureSpell"
+    allow-granted: true
+    items:
+        - Grip
+    incantations:
+        - /G
+        - /그랩
+    add-to-inventory: true
+    always-granted: true
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l무기&f&l가 지급되었습니다!" 

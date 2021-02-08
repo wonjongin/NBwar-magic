@@ -1,4 +1,23 @@
-Jack_[SS]: 
+Jack_[SS]:
+    spell-class: ".MultiSpell"
+    spells:
+      - Jack_[SS]_Invisibility
+      - Jack_[SS]_title_1
+      - DELAY 20
+      - Jack_[SS]_title_2
+      - DELAY 20
+      - Jack_[SS]_title_3
+      - DELAY 20
+      - Jack_[SS]_title_4
+      - DELAY 20
+      - Jack_[SS]_title_5
+      - DELAY 20
+      - Jack_[SS]_title_6
+      
+
+
+##################################은신#######################################
+Jack_[SS]_Invisibility: 
     spell-class: ".buff.InvisibilitySpell"
     toggle: true
     prevent-pickups: true
@@ -44,3 +63,51 @@ Jack_[SS]:
         y-offset: 1
         
         count: 5
+#################################시간##################################################
+Jack_[SS]_title_1:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l5초"
+
+Jack_[SS]_title_2:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l4초"
+
+Jack_[SS]_title_3:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l3초"
+
+Jack_[SS]_title_4:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l2초"
+    
+Jack_[SS]_title_5:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l1초"
+
+Jack_[SS]_title_6:
+    spell-class: ".instant.DummySpell"
+    effects:
+      1:
+        position: caster
+        effect: actionbartext
+        message: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&f&l해제"

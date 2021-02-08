@@ -1,0 +1,42 @@
+predefined-items:     #이 구문이 뭐냐면 아까 잭더리퍼 처럼 무기 만드는 구문이야 대충 그렇구나라고넘어가면됨
+    예시용아이템:     #나도 이거 복붙해서씀 
+        type: "267"     
+        name: "예시예시"   
+        attributes:
+            attr1: "generic.attackDamage 0 add mainhand"  
+
+
+Pain: #제목 이제 /c 이거 불편할수도있으니까 이걸 간편하게 할수도있어요 
+    spell-class: ".targeted.DotSpell"
+    cast-item: 예시용아이템
+    delay: 5
+    interval: 1
+    duration: 4
+    prevent-knockback: true
+    effects: #이구문 말그대로 이펙트 구문 이 구문에서 이제 이펙트립 을 할수가있음 어떤거
+      1: #여거그냥 구분하는거 숫자로 구분  
+        position: target
+        effect: particles 
+        particle-name: lava
+        vert-spread: 0.01
+        horiz-spread: 0.01
+        speed: 0.1
+        count: 30
+      2:
+        position: target
+        effect: particles 
+        particle-name: smoke 
+        vert-spread: 0.01
+        horiz-spread: 0.01
+        speed: 0.1
+        count: 30
+PainConjure:
+    spell-class: ".instant.ConjureSpell" #이구문은 이거 간편하게 지급하게하는거 
+    allow-granted: true
+    items:
+        - 예시용아이템
+    incantations:
+        - /지급
+    add-to-inventory: true
+    always-granted: true
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l무기&f&l가 지급되었습니다!"

@@ -1,23 +1,125 @@
+#################레오니다스 우클릭#######################
+variables:
+    Leonidas_[R]:
+        type: player
+        default: 1
+        min: 0
+        max: 3
+        permanent: false
+    LeoShift:
+        type: player
+        default: 0
+        min: 0
+        max: 60
+        permanent: false
+
+
+Leo_[R]_Dummy:
+    spell-class: ".instant.DummySpell" 
+    variable-mods-cast:     
+        - Leonidas_[R] +1        
+    right-click-cast-item: Leonidas  
+
+Leo_[R]_Passive_1:
+    spell-class: ".PassiveSpell"
+    always-granted: true
+    can-cast-by-command: false
+    triggers:
+        - spellcast Leo_[R]_Dummy     
+    modifiers:
+        - variableequals Leonidas_[R]:1 required    
+    spells:
+        - Leo_[R]_Shield_1 
+        - Leo_[R]_title_1
+
+Leo_[R]_Passive_2:
+    spell-class: ".PassiveSpell"
+    always-granted: true
+    can-cast-by-command: false
+    triggers:
+        - spellcast Leo_[R]_Dummy     
+    modifiers:
+        - variableequals Leonidas_[R]:2 required    
+    spells:
+        - Leo_[R]_Jump
+
+Leo_[R]_Passive_3:
+    spell-class: ".PassiveSpell"
+    always-granted: true
+    can-cast-by-command: false
+    triggers:
+        - spellcast Leo_[R]_Dummy     
+    modifiers:
+        - variableequals Leonidas_[R]:3 required    
+    variable-mods-cast:     
+        - Leonidas_[R] -3
+    spells:
+        - Leo_[R]_Shield_2
+        - Leo_[R]_title_2  
 #################레오니다스 쉬쉬#################
+Leo_[SS]_Dummy:
+    spell-class: ".instant.DummySpell"
+
+Leo_[SS]_Cooldown:
+    spell-class: ".PassiveSpell"
+    triggers:
+        - ticks 20
+    variable-mods-cast:
+        - LeoShift -1
+    spells:
+        - Leo_[SS]_Dummy
+
 Leonidas_[SS]:
     spell-class: ".PassiveSpell" 
     triggers: 
         - stopsneak 
     modifiers: 
-        - holding 267|&4&lLeo&6&lni&f&ldas required 
+        - holding 267|&4&lLeo&6&lni&f&ldas required
+        - buffactive Leo_[SS]Dummy denied 
     spells:
         - Leo_[SS]Dummy
 Leo_[SS]Dummy: 
     spell-class: ".buff.DummySpell"
-    duration: 0.1
+    duration: 0.2
 Leo_[SS]Passive: 
     spell-class: ".PassiveSpell"
-    cooldown: 10
-    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l &4&l스파르타&7&l의 &2&l생존능력&7&l이 발휘 됩니다!"
+    variable-mods-cast:
+        - LeoShift +60
     triggers: 
         - sneak 
     modifiers: 
         - holding 267|&4&lLeo&6&lni&f&ldas required 
         - buffactive Leo_[SS]Dummy required 
+        - variablemorethan LeoShift:0 castinstead Leo_cool
     spells:
         - Leo_[SS]
+
+Leo_cool:
+    spell-class: ".instant.DummySpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l[SS] &f&l%var:LeoShift:0%초 남았습니다"
+
+###############레오니다스 쉬좌####################################
+Leonidas_[SL]:
+    spell-class: ".MultiSpell"
+    cooldown: 120
+    str-on-cooldown: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l[SL] %c초 남았습니다." 
+    cast-item: Leonidas
+    modifiers:
+        - sneaking required
+    spells:
+      - Leo_[SL]_Earthquake_Multi
+##############레오니다스 패시브##################################
+Leonidas_[P]:
+    spell-class: ".PassiveSpell"
+    cooldown: 60
+    str-on-cooldown: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]SR %c초 만큼 남았습니다."
+    triggers: 
+        - ticks 20
+    modifiers:
+        - holding 267|&4&lLeo&6&lni&f&ldas required
+        - healthbelow 10% required
+    spells:
+      - Leo_[P]_Athanasia
+      - Leo_[P]_5time
+      - Leo_[P]_title
+

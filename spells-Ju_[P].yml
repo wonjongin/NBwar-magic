@@ -1,0 +1,700 @@
+##########################################주몽 데미지 구문######################################
+Ju_[P]_DDot:
+    spell-class: ".targeted.DotSpell"
+    delay: 1
+    interval: 1
+    duration: 1
+    prevent-knockback: false
+
+Ju_[P]_Effect_1:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 24
+    strength: 5
+    duration: 100
+    targeted: true
+
+Ju_[P]_Effect_2:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 19
+    strength: 10
+    duration: 100
+    targeted: true
+
+Ju_[P]_Effect_3:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 7
+    strength: 1
+    duration: 100
+    targeted: true
+
+Ju_[P]_Effect_4:
+    spell-class: ".targeted.PotionEffectSpell"
+    type: 20
+    strength: 3
+    duration: 100
+    targeted: true
+
+Ju_[P]_Stun:
+    spell-class: ".targeted.StunSpell"
+    cast-item: stick
+    duration: 5
+    interval: 1
+
+Ju_[P]_Effect&Damage:
+    spell-class: ".TargetedMultiSpell"
+    spells:
+      - Ju_[P]_DDot
+      - DELAY 1
+      - Ju_[P]_Effect_1
+      - Ju_[P]_Effect_2
+      - Ju_[P]_Effect_3
+      - Ju_[P]_Effect_4
+      - DELAY 99
+      - Ju_[P]_Stun
+
+
+##########################################주몽 쉬쉬 유도탄######################################
+Ju_[P]_M_1:     
+    spell-class: ".targeted.HomingMissileSpell"    
+    projectile-velocity: 15
+    projectile-inertia: 1
+    max-duration: 1
+    tick-interval: 1
+    range: 15
+    relative-offset: -1,2,0
+    target-relative-offset: 0,1.5,0
+    particle-name: flame
+    target-players: true     
+    spell: Ju_[P]_Effect&Damage
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 00bf83
+            orient: false
+      2:
+        position: special 
+        effect: sound        
+        sound: entity.blaze.shoot
+        volume: 2
+        pitch: 2   
+  
+
+Ju_[P]_M_2:     
+    spell-class: ".targeted.HomingMissileSpell"    
+    projectile-velocity: 15
+    projectile-inertia: 1
+    max-duration: 1
+    tick-interval: 1
+    range: 15
+    relative-offset: -1,1.3,0.7
+    target-relative-offset: 0,1.5,0
+    particle-name: flame
+    target-players: true     
+    spell: Ju_[P]_Effect&Damage
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 59ffe6
+            orient: false
+
+Ju_[P]_M_3:     
+    spell-class: ".targeted.HomingMissileSpell"    
+    projectile-velocity: 15
+    projectile-inertia: 1
+    max-duration: 1
+    tick-interval: 1
+    range: 15
+    relative-offset: -1,1.3,-0.7
+    target-relative-offset: 0,1.5,0
+    particle-name: flame
+    target-players: true     
+    spell: Ju_[P]_Effect&Damage
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: adf1ff
+            orient: false
+
+Ju_[P]_M_4:     
+    spell-class: ".targeted.HomingMissileSpell"    
+    projectile-velocity: 15
+    projectile-inertia: 1
+    max-duration: 1
+    tick-interval: 1
+    range: 15
+    relative-offset: -1,0.5,0.9
+    target-relative-offset: 0,1.5,0
+    particle-name: flame
+    target-players: true     
+    spell: Ju_[P]_Effect&Damage
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 5f91ad
+            orient: false
+
+Ju_[P]_M_5:     
+    spell-class: ".targeted.HomingMissileSpell"    
+    projectile-velocity: 15
+    projectile-inertia: 1
+    max-duration: 1
+    tick-interval: 1
+    range: 15
+    relative-offset: -1,0.5,-0.9
+    target-relative-offset: 0,1.5,0
+    particle-name: flame
+    target-players: true     
+    spell: Ju_[P]_Effect&Damage
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 150
+            particle: redstone
+            particles: 20
+            cycle: false
+            color: 9ec3ff
+            orient: false
+
+##########################################주몽 쉬쉬 패시브######################################
+variables:
+    Ju_[P]:
+        type: player
+        default: 0
+        min: 0
+        max: 5
+        permanent: false
+
+Ju_[P]_Dummy:
+    spell-class: ".instant.DummySpell"
+
+Ju_[P]_Passive_Soul:
+    spell-class: ".PassiveSpell"
+    triggers:
+        - ticks 300
+    variable-mods-cast:     
+        - Ju_[P] +1     
+    modifiers:
+        - holding 268|&b&lJu&3&lMong required 
+        - variablessthan Ju_[P]:5 required  
+    spells:
+      - Ju_[P]_Dummy
+
+Ju_[P]_Passive_Soul_1:
+    spell-class: ".PassiveSpell" 
+    triggers:
+        - ticks 1
+    modifiers:
+        - holding 268|&b&lJu&3&lMong required 
+        - variablemorethan Ju_[P]:0 required   
+    spells:
+      - Ju_[P]_Soul_1
+
+Ju_[P]_Passive_Soul_2:
+    spell-class: ".PassiveSpell" 
+    triggers:
+        - ticks 1
+    modifiers:
+        - holding 268|&b&lJu&3&lMong required 
+        - variablemorethan Ju_[P]:1 required   
+    spells:
+      - Ju_[P]_Soul_2   
+
+Ju_[P]_Passive_Soul_3:
+    spell-class: ".PassiveSpell" 
+    triggers:
+        - ticks 1
+    modifiers:
+        - holding 268|&b&lJu&3&lMong required 
+        - variablemorethan Ju_[P]:2 required   
+    spells:
+      - Ju_[P]_Soul_3  
+
+Ju_[P]_Passive_Soul_4:
+    spell-class: ".PassiveSpell" 
+    triggers:
+        - ticks 1
+    modifiers:
+        - holding 268|&b&lJu&3&lMong required 
+        - variablemorethan Ju_[P]:3 required   
+    spells:
+      - Ju_[P]_Soul_4
+
+Ju_[P]_Passive_Soul_5:
+    spell-class: ".PassiveSpell" 
+    triggers:
+        - ticks 1
+    modifiers:
+        - holding 268|&b&lJu&3&lMong required 
+        - variablemorethan Ju_[P]:4 required   
+    spells:
+      - Ju_[P]_Soul_5
+
+Ju_[P]_Soul_1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l구체 [1/5]"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0.2
+    particle-vertical-spread: 0.2
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 2
+    start-z-offset: 0
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: NONE
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 00bf83
+            orient: false
+
+Ju_[P]_Soul_2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l구체 [2/5]"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0.2
+    particle-vertical-spread: 0.2
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 1.3
+    start-z-offset: 0.7
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: NONE
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 59ffe6
+            orient: false
+
+Ju_[P]_Soul_3:
+    spell-class: ".instant.ParticleProjectileSpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l구체 [3/5]"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0.2
+    particle-vertical-spread: 0.2
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 1.3
+    start-z-offset: -0.7
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: NONE
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: adf1ff
+            orient: false
+
+Ju_[P]_Soul_4:
+    spell-class: ".instant.ParticleProjectileSpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l구체 [4/5]"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0.2
+    particle-vertical-spread: 0.2
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 0.5
+    start-z-offset: 0.9
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: NONE
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 5f91ad
+            orient: false
+
+Ju_[P]_Soul_5:
+    spell-class: ".instant.ParticleProjectileSpell"
+    str-cast-self: "&8&l[&b&lN&3&lB &5&lMagicSpell&8&l]&7&l구체 [5/5]"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0.1
+    particle-horizontal-spread: 0.2
+    particle-vertical-spread: 0.2
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 0
+    hit-players: true
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: -1
+    start-y-offset: 0.5
+    start-z-offset: -0.9
+    hit-radius: 1
+    vertical-hit-radius: 1
+    stop-on-hit-entity: false
+    stop-on-hit-ground: false
+    hug-surface: false
+    height-from-surface: 0.1
+    spell: NONE
+    effects:
+      0:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 5999ff
+            orient: false
+      1:
+        position: special
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0t"
+            yEquation: "0t"
+            zEquation: "0t"
+            duration: 50
+            particle: redstone
+            particles: 10
+            cycle: false
+            color: 9ec3ff
+            orient: false
+
+##########################################주몽광역패시브#########################################
+Ju_[P]_chain:
+    spell-class: ".targeted.ChainSpell"
+    spell: Ju_[P]_Dot
+    bounces: 5
+    bounce-range: 10
+    interval: 5
+    target-players: false
+    target-non-players: true
+    effects:
+      1:
+        position: line
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0tan(t)"
+            yEquation: "0cos(t)"
+            zEquation: "0sin(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: 5999ff
+            orient: false
+      2:
+        position: line
+        effect: effectlib
+        effectlib: 
+            class: EquationEffect
+            xEquation: "0tan(t)"
+            yEquation: "0cos(t)"
+            zEquation: "0sin(t)"
+            duration: 100
+            particle: redstone
+            particles: 25
+            cycle: false
+            color: c7ffff
+            orient: false
+      3:
+        position: target
+        effect: sound
+        sound: entity.enderdragon.flap
+        volume: 2
+        pitch: 1
+      4:
+        position: target
+        effect: sound
+        sound: entity.wither.shoot
+        volume: 0.5
+        pitch: 0
+
+##########################################주몽 패시브 데미지##################################
+Ju_[P]_Dot:
+    spell-class: ".targeted.DotSpell"
+    delay: 1
+    interval: 1
+    duration: 1
+    prevent-knockback: false

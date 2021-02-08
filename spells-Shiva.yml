@@ -1,0 +1,1848 @@
+predefined-items:
+    Shiva:
+        type: "267"
+        name: '&f[ &4Sword of Destruction&f ]'
+        lore:
+          - "&f[ &4!&f ] &dMade By Gojic_C(TK)"
+        unbreakable: true
+        enchants:
+          - 0 10
+
+Shiva_LM:
+    spell-class: ".MultiSpell"
+    spells:
+        - Shiva_S1
+        - Shiva_LPP1
+        - DELAY 40
+        - Shiva_LPP2
+        - DELAY 80
+        - Shiva_LPP_PV
+
+Shiva_RM:
+    spell-class: ".MultiSpell"
+    spells:
+        - Shiva_RPP1
+        - DELAY 32
+        - Shiva_L1
+        - DELAY 30
+        - Shiva_L2
+        - DELAY 20
+        - Shiva_RPP2
+    right-click-cast-item: Shiva
+    modifiers:
+        - sneaking castinstead Shiva_SRM
+
+Shiva_SLM:
+    spell-class: ".MultiSpell"
+    spells:
+        - Shiva_S2
+        - Shiva_SLPP1
+        - DELAY 70
+        - Shiva_SLPP2
+        - DELAY 110
+        - Shiva_SLPP3
+    modifiers:
+        - sneaking required
+
+Shiva_LD:
+    spell-class: ".instant.DummySpell"
+    cast-item: Shiva
+    modifiers:
+        - sneaking castinstead Shiva_SLM
+
+Shiva_LP:
+    spell-class: ".PassiveSpell"
+    always-granted: true
+    triggers:
+        - spellcast Shiva_LD
+    modifiers:
+        - sneaking castinstead Shiva_SLM
+    spells:
+        - Shiva_LM
+
+Shiva_1:
+    spell-class: ".ExternalCommandSpell"
+    command-to-execute:
+        - "c Shiva_RM"
+    modifiers:
+        - sneaking denied
+
+Shiva_2:
+    spell-class: ".ExternalCommandSpell"
+    command-to-execute:
+        - "c Shiva_SRM"
+    modifiers:
+        - sneaking required
+
+Shiva_SRM:
+    spell-class: ".MultiSpell"
+    spells:
+        - Shiva_SRPP1
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 5
+        - Shiva_SRPP2
+        - DELAY 20
+        - Shiva_SRPP3
+
+Shiva_LPP1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: false
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: NONE
+    effects:
+      1:
+        position: special
+        effect: effectlib
+        delay: 40
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "abs(80sin(1/log0.00008t)1sin(t)) + rand(-0.5,0.5) - 7"
+            yEquation: "-abs(80cos(1/log0.00008t)1sin(t)) + 10"
+            zEquation: "0"
+            duration: 4000
+            particles: 75
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff1111
+      2:
+        position: special
+        effect: effectlib
+        delay: 40
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "abs(80sin(1/log0.00008t)1sin(t)) + rand(-0.5,0.5) - 7"
+            yEquation: "-abs(80cos(1/log0.00008t)1sin(t)) + 10"
+            zEquation: "0"
+            duration: 4000
+            particles: 75
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      3:
+        position: special
+        effect: effectlib
+        delay: 40
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "+ rand(-0.5,0.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 5
+            cycle: true
+            orient: true
+            orientPitch: false
+      4:
+        position: special
+        effect: effectlib
+        delay: 45
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "1 + rand(-0.5,0.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 5
+            cycle: true
+            orient: true
+            orientPitch: false
+      5:
+        position: special
+        effect: effectlib
+        delay: 47
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "2 + rand(-0.5,0.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 5
+            cycle: true
+            orient: true
+            orientPitch: false
+      6:
+        position: special
+        effect: effectlib
+        delay: 48
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "3 + rand(-0.5,0.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 600
+            particles: 5
+            cycle: true
+            orient: true
+            orientPitch: false
+      7:
+        position: special
+        effect: effectlib
+        delay: 55
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "5 + rand(-1.5,1.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 1000
+            particles: 5
+            cycle: true
+            orient: true
+            orientPitch: false
+      8:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "7 + rand(-1.5,1.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 1000
+            particles: 8
+            cycle: true
+            orient: true
+            orientPitch: false
+      9:
+        position: special
+        effect: effectlib
+        delay: 90
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "10 + rand(-2.5,2.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      10:
+        position: special
+        effect: effectlib
+        delay: 100
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "13 + rand(-2.5,2.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      11:
+        position: special
+        effect: effectlib
+        delay: 105
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "15 + rand(-2.5,2.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      12:
+        position: special
+        effect: effectlib
+        delay: 108
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "18 + rand(-2.5,2.5) - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      13:
+        position: special
+        effect: effectlib
+        delay: 110
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "20 + rand(-2.5,2.5) + 0.1t - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 600
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      14:
+        position: special
+        effect: effectlib
+        delay: 116
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "26 + rand(-2.5,2.5) + 0.2t - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      15:
+        position: special
+        effect: effectlib
+        delay: 116
+        effectlib: 
+            class: EquationEffect
+            particle: explosion_large
+            xEquation: "26 + rand(-2.5,2.5) + 0.2t - 7"
+            yEquation: "0"
+            zEquation: "3sin(t)"
+            duration: 400
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      16:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "- 7 + (1.5sin(t)^5)sin(0.002t)"
+            yEquation: "10 + (3sin(t)^5)sin(0.002t)"
+            zEquation: "(3cos(t)^5)sin(0.002t)"
+            duration: 2000
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff1111
+      17:
+        position: special
+        effect: effectlib
+        delay: 10
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "- 7 + (1.5sin(t)^5)sin(0.002t)"
+            yEquation: "10 + (3sin(t)^5)sin(0.002t)"
+            zEquation: "(3cos(t)^5)sin(0.002t)"
+            duration: 2000
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      18:
+        position: special
+        effect: sound
+        sound: entity.enderdragon.growl
+        volume: 1
+        pitch: 0.5
+      19:
+        delay: 40
+        position: special
+        effect: sound
+        sound: entity.experience_orb.pickup
+        volume: 1
+        pitch: 0.5
+      20:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "- 7 + 2.5sin(t)sin(0.002t)"
+            yEquation: "10 + 5sin(t)sin(0.002t)"
+            zEquation: "5cos(t)sin(0.002t)"
+            duration: 2000
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff1111
+      21:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "- 7 + 2.5sin(t)sin(0.002t)"
+            yEquation: "10 + 5sin(t)sin(0.002t)"
+            zEquation: "5cos(t)sin(0.002t)"
+            duration: 2000
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      22:
+        position: special
+        effect: effectlib
+        delay: 120
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "60sin(0.001t) - 3 + rand(-3,3)"
+            yEquation: "0"
+            zEquation: "rand(-2,2)"
+            duration: 1700
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+
+Shiva_LPP2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 4
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 28
+    max-duration: 4
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: false
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: NONE
+    effects:
+      1:
+        position: special
+        effect: sound
+        sound: entity.wither.shoot
+        volume: 1
+        pitch: 0.5
+
+Shiva_RPP1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: false
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: NONE
+    effects:
+      1:
+        position: special
+        effect: effectlib
+        delay: 32
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "3sin(t) + rand(-1,1)"
+            yEquation: "0.05t"
+            zEquation: "3cos(t) + rand(-1,1)"
+            duration: 1200
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+      2:
+        position: special
+        effect: effectlib
+        delay: 32
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "6sin(0.03t) + rand(-1,1)"
+            yEquation: "0.05t"
+            zEquation: "6cos(0.03t) + rand(-1,1)"
+            duration: 1200
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      3:
+        position: special
+        effect: effectlib
+        delay: 32
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "6sin(0.03t) + rand(-1,1)"
+            yEquation: "0.05t"
+            zEquation: "6cos(0.03t) + rand(-1,1)"
+            duration: 1200
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff1111
+      4:
+        position: special
+        effect: effectlib
+        delay: 32
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "-6sin(0.03t) + rand(-1,1)"
+            yEquation: "0.05t"
+            zEquation: "-6cos(0.03t) + rand(-1,1)"
+            duration: 1200
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      5:
+        position: special
+        effect: effectlib
+        delay: 32
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "-6sin(0.03t) + rand(-1,1)"
+            yEquation: "0.05t"
+            zEquation: "-6cos(0.03t) + rand(-1,1)"
+            duration: 1200
+            particles: 20
+            cycle: true
+            orient: true
+            orientPitch: false
+            color: ff1111
+      6:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "8cos(3.5t)1.5cos(0.0035t)"
+            yEquation: "0.1cos(t) + 0.1sin(t) + 0.05t"
+            zEquation: "8sin(3.5t)1.5cos(0.0035t)"
+            duration: 1600
+            particles: 14
+            cycle: true
+            orient: true
+            orientPitch: false
+      7:
+        position: special
+        effect: effectlib
+        delay: 10
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "8cos(3.5t)1.5cos(0.0035t)"
+            yEquation: "0.1cos(t) + 0.1sin(t) + 0.05t"
+            zEquation: "8sin(3.5t)1.5cos(0.0035t)"
+            duration: 1600
+            particles: 14
+            cycle: true
+            orient: true
+            orientPitch: false
+      8:
+        position: special
+        effect: effectlib
+        delay: 20
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "8cos(3.5t)1.5cos(0.0035t)"
+            yEquation: "0.1cos(t) + 0.1sin(t) + 0.05t"
+            zEquation: "8sin(3.5t)1.5cos(0.0035t)"
+            duration: 1600
+            particles: 14
+            cycle: true
+            orient: true
+            orientPitch: false
+      9:
+        delay: 0
+        position: special
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 1
+        pitch: 0.5
+      10:
+        delay: 10
+        position: special
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 1
+        pitch: 0.5
+      11:
+        delay: 20
+        position: special
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 1
+        pitch: 0.5
+      12:
+        delay: 30
+        position: special
+        effect: sound
+        sound: entity.wither.shoot
+        volume: 1
+        pitch: 1.2
+
+Shiva_RPP2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: Shiva_AP1
+    effects:
+      1:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "8cos(0.7(2300-t))1.5cos(0.0007(2300-t))"
+            yEquation: "0.1cos(t) + 0.1sin(t) + 0.01t - 7"
+            zEquation: "8sin(0.7(2300-t))1.5cos(0.0007(2300-t))"
+            duration: 1600
+            particles: 70
+            orient: true
+            orientPitch: false
+      2:
+        position: special
+        effect: effectlib
+        delay: 15
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "8cos(0.7(2300-t))1.5cos(0.0007(2300-t))"
+            yEquation: "0.1cos(t) + 0.1sin(t) + 0.01t - 7"
+            zEquation: "8sin(0.7(2300-t))1.5cos(0.0007(2300-t))"
+            duration: 1600
+            particles: 70
+            orient: true
+            orientPitch: false
+      3:
+        position: special
+        effect: effectlib
+        delay: 30
+        effectlib: 
+            class: EquationEffect
+            particle: Explosion_Large
+            xEquation: "8cos(0.7(2300-t))1.5cos(0.0007(2300-t))"
+            yEquation: "0.1cos(t) + 0.1sin(t) + 0.01t - 7"
+            zEquation: "8sin(0.7(2300-t))1.5cos(0.0007(2300-t))"
+            duration: 1600
+            particles: 70
+            orient: true
+            orientPitch: false
+      4:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "14sin(0.02t) + rand(-1,1)"
+            yEquation: "0.02t"
+            zEquation: "14cos(0.02t) + rand(-1,1)"
+            duration: 1600
+            particles: 35
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      5:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "-14sin(0.02t) + rand(-1,1)"
+            yEquation: "0.02t"
+            zEquation: "-14cos(0.02t) + rand(-1,1)"
+            duration: 1600
+            particles: 35
+            orient: true
+            orientPitch: false
+            color: ff1111
+      6:
+        delay: 5
+        position: special
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 1
+        pitch: 1.2
+      7:
+        delay: 20
+        position: special
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 1
+        pitch: 1.2
+      8:
+        delay: 35
+        position: special
+        effect: sound
+        sound: entity.enderdragon_fireball.explode
+        volume: 1
+        pitch: 1.2
+
+Shiva_SLPP1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: false
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: NONE
+    effects:
+      1:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) - 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      2:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) - 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111
+      3:
+        position: special
+        effect: effectlib
+        delay: 10
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) + 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      4:
+        position: special
+        effect: effectlib
+        delay: 10
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) + 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111      
+      5:
+        position: special
+        effect: effectlib
+        delay: 20
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) + 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      6:
+        position: special
+        effect: effectlib
+        delay: 20
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) + 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111
+      7:
+        position: special
+        effect: effectlib
+        delay: 30
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) - 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      8:
+        position: special
+        effect: effectlib
+        delay: 30
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) - 0.026t + 30"
+            zEquation: "rand(-2,2) - 7"
+            duration: 2000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111
+      9:
+        position: special
+        effect: effectlib
+        delay: 40
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) - 7"
+            duration: 7000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      10:
+        position: special
+        effect: effectlib
+        delay: 40
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) - 7"
+            duration: 7000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111
+      11:
+        position: special
+        effect: effectlib
+        delay: 50
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) + 7"
+            duration: 6500
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      12:
+        position: special
+        effect: effectlib
+        delay: 50
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) + 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) + 7"
+            duration: 6500
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111      
+      13:
+        position: special
+        effect: effectlib
+        delay: 60
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) + 7"
+            duration: 6000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      14:
+        position: special
+        effect: effectlib
+        delay: 60
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) + 7"
+            duration: 6000
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111
+      15:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) - 7"
+            duration: 5500
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      16:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-2,2) - 7"
+            yEquation: "10sin(t) + 3"
+            zEquation: "rand(-2,2) - 7"
+            duration: 5500
+            particles: 25
+            orient: true
+            orientPitch: false
+            color: ff1111
+      17:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib:
+            class: EquationEffect
+            xEquation: "5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            yEquation: "0.1"
+            zEquation: "5cos(100t)^3(1.5sin(0.005t) * (3sin(300 / t)2cos(0.2t)^3) * sin(3t)) + 5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            duration: 5500
+            particle: redstone
+            color: ff1111
+            particles: 20
+            speed: 0
+            orient: true
+            orientPitch: false
+      18:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib:
+            class: EquationEffect
+            xEquation: "5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            yEquation: "0.1"
+            zEquation: "5cos(100t)^3(1.5sin(0.005t) * (3sin(300 / t)2cos(0.2t)^3) * sin(3t)) + 5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            duration: 5500
+            particle: redstone
+            color: ff6a00
+            particles: 20
+            speed: 0
+            orient: true
+            orientPitch: false
+      19:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib:
+            class: EquationEffect
+            xEquation: "5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            yEquation: "0.1"
+            zEquation: "5cos(100t)^3(1.5sin(0.005t) * (3sin(300 / t)2cos(0.2t)^3) * sin(3t)) - 5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            duration: 5500
+            particle: redstone
+            color: ff1111
+            particles: 20
+            speed: 0
+            orient: true
+            orientPitch: false
+      20:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib:
+            class: EquationEffect
+            xEquation: "5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            yEquation: "0.1"
+            zEquation: "5cos(100t)^3(1.5sin(0.005t) * (3sin(300 / t)2cos(0.2t)^3) * sin(3t)) - 5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            duration: 5500
+            particle: redstone
+            color: ff6a00
+            particles: 20
+            speed: 0
+            orient: true
+            orientPitch: false
+      21:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib:
+            class: EquationEffect
+            xEquation: "5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            yEquation: "0.1"
+            zEquation: "5cos(100t)^3(1.5sin(0.005t) * (3sin(300 / t)2cos(0.2t)^3) * sin(3t))"
+            duration: 5500
+            particle: redstone
+            color: ff1111
+            particles: 20
+            speed: 0
+            orient: true
+            orientPitch: false
+      22:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib:
+            class: EquationEffect
+            xEquation: "5sin(100t)^3(1.5sin(0.005t) * (3cos(300 / t)2cos(0.2t)^3) * sin(3t))"
+            yEquation: "0.1"
+            zEquation: "5cos(100t)^3(1.5sin(0.005t) * (3sin(300 / t)2cos(0.2t)^3) * sin(3t))"
+            duration: 5500
+            particle: redstone
+            color: ff6a00
+            particles: 20
+            speed: 0
+            orient: true
+            orientPitch: false
+      23:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "4sin(t)"
+            yEquation: "0.1"
+            zEquation: "4cos(t)"
+            duration: 5500
+            particles: 7
+            orient: true
+            orientPitch: false
+            color: ff1111
+      24:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "4sin(t)"
+            yEquation: "0.1"
+            zEquation: "4cos(t)"
+            duration: 5500
+            particles: 7
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      25:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "7stin(t)"
+            yEquation: "0.1"
+            zEquation: "7cos(t)"
+            duration: 5500
+            particles: 13
+            orient: true
+            orientPitch: false
+            color: ff1111
+      26:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "7sin(t)"
+            yEquation: "0.1"
+            zEquation: "7cos(t)"
+            duration: 5500
+            particles: 13
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      27:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-12,12)"
+            yEquation: "rand(-12,12)"
+            zEquation: "rand(-12,12)"
+            duration: 5500
+            particles: 20
+            orient: true
+            orientPitch: false
+            color: ff1111
+      28:
+        position: special
+        effect: effectlib
+        delay: 70
+        effectlib: 
+            class: EquationEffect
+            particle: redstone
+            xEquation: "rand(-12,12)"
+            yEquation: "rand(-12,12)"
+            zEquation: "rand(-12,12)"
+            duration: 5500
+            particles: 20
+            orient: true
+            orientPitch: false
+            color: ff6a00
+      29:
+        delay: 0
+        position: special
+        effect: sound
+        sound: entity.ghast.shoot
+        volume: 1
+        pitch: 0.5
+      30:
+        delay: 10
+        position: special
+        effect: sound
+        sound: entity.ghast.shoot
+        volume: 1
+        pitch: 0.5
+      31:
+        delay: 20
+        position: special
+        effect: sound
+        sound: entity.ghast.shoot
+        volume: 1
+        pitch: 0.5
+      32:
+        delay: 30
+        position: special
+        effect: sound
+        sound: entity.ghast.shoot
+        volume: 1
+        pitch: 0.5
+      33:
+        delay: 70
+        position: special
+        effect: sound
+        sound: entity.generic.explode
+        volume: 1
+        pitch: 0.5
+      34:
+        delay: 180
+        position: special
+        effect: sound
+        sound: entity.wither.death
+        volume: 1
+        pitch: 0.5
+
+Shiva_SLPP2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: Shiva_AP2
+    effects:
+
+Shiva_SLPP3:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: Shiva_AP3
+    effects:
+      1:
+        delay: 0
+        position: special
+        effect: effectlib
+        height-offset: 0
+        effectlib:
+            class: ModifiedEffect
+            duration: 1500
+            effect:
+                 class: SphereEffect
+                 radius: 3
+                 particle: lava
+                 particles: 20
+                 relativeOffset: -3.5,0,0
+            parameters:
+                 radius: "t * 0.6"
+
+Shiva_SRPP1:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: false
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: NONE
+    effects:
+      1:
+        position: caster
+        effect: effectlibentity
+        delay: 0
+        effectlib: 
+            class: EquationEffect
+            particle: lava
+            xEquation: "7sin(t)2sin(0.9t)"
+            yEquation: "0.1"
+            zEquation: "7cos(t)2sin(0.9t)"
+            duration: 10000
+            particles: 15
+            orient: true
+            orientPitch: false
+
+Shiva_SRPP2:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: Shiva_AP4
+    effects:
+      1:
+        position: caster
+        effect: sound
+        sound: block.lava.extinguish
+        volume: 1
+        pitch: 0.5
+
+Shiva_SRPP3:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 0
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 0
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: true
+    start-forward-offset: 0
+    start-y-offset: 0
+    hit-radius: 1.5
+    vertical-hit-radius: 1.5
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: Shiva_AP5
+    effects:
+      1:
+        position: special
+        effect: effectlib
+        delay: 0
+        effectlib:
+            class: EquationEffect
+            xEquation: "7sin(0.005t)2cos(0.1t)"
+            yEquation: "3sin(0.005t)2sin(0.1t) + 0.06t"
+            zEquation: "-7sin(0.005t)2sin(0.1t)"
+            particle: lava
+            duration: 1200
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      2:
+        position: special
+        effect: effectlib
+        delay: 5
+        effectlib:
+            class: EquationEffect
+            xEquation: "7sin(0.005t)2cos(0.1t)"
+            yEquation: "3sin(0.005t)2sin(0.1t) + 0.06t"
+            zEquation: "-7sin(0.005t)2sin(0.1t)"
+            particle: lava
+            duration: 1200
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      3:
+        position: special
+        effect: effectlib
+        delay: 10
+        effectlib:
+            class: EquationEffect
+            xEquation: "7sin(0.005t)2cos(0.1t)"
+            yEquation: "3sin(0.005t)2sin(0.1t) + 0.06t"
+            zEquation: "-7sin(0.005t)2sin(0.1t)"
+            particle: lava
+            duration: 1200
+            particles: 12
+            cycle: true
+            orient: true
+            orientPitch: false
+      4:
+        position: caster
+        effect: sound
+        sound: entity.wither.death
+        volume: 1
+        pitch: 1
+      5:
+        delay: 5
+        position: caster
+        effect: sound
+        sound: entity.wither.death
+        volume: 1
+        pitch: 1.5
+      6:
+        delay: 10
+        position: caster
+        effect: sound
+        sound: entity.wither.death
+        volume: 1
+        pitch: 2
+
+Shiva_LPP_PV:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 22
+    projectile-gravity: 0
+    projectile-horiz-offset: 0
+    projectile-vert-offset: 0
+    particle-name: take
+    particle-speed: 0
+    particle-count: 0
+    hug-surface: true
+    height-from-surfece: 1
+    particle-horizontal-spread: 0.1
+    particle-vertical-spread: 0.1
+    special-effect-interval: 1
+    tick-interval: 1
+    max-distance: 30
+    max-duration: 99999
+    hit-players: false
+    hit-non-players: true
+    hit-air-at-end: false
+    start-forward-offset: -1
+    start-y-offset: 0
+    hit-radius: 2
+    vertical-hit-radius: 2
+    stop-on-hit-entity: false
+    stop-on-hit-ground: true
+    spell: Shiva_P1
+    effects:
+      1:
+        position: special
+        effect: sound
+        sound: entity.generic.explode
+        volume: 1
+        pitch: 0.5
+
+Shiva_L1:
+    spell-class: ".instant.LeapSpell"
+    forward-velocity: 0
+    upward-velocity: 24
+    cancel-damage: true
+
+Shiva_L2:
+    spell-class: ".instant.LeapSpell"
+    forward-velocity: 16
+    upward-velocity: -7
+    cancel-damage: true
+
+Shiva_S1:
+    spell-class: ".targeted.StunSpell"
+    duration: 6
+    target-self: true
+
+Shiva_S2:
+    spell-class: ".targeted.StunSpell"
+    duration: 9
+    target-self: true
+
+Shiva_P1:
+    spell-class: ".targeted.PainSpell"
+    damage: 20
+
+Shiva_P2:
+    spell-class: ".targeted.PainSpell"
+    damage: 30
+
+Shiva_P3:
+    spell-class: ".targeted.PainSpell"
+    damage: 50
+
+Shiva_P4:
+    spell-class: ".targeted.PainSpell"
+    damage: 70
+
+Shiva_AP1:
+    spell-class: ".targeted.AreaEffectSpell"
+    horizontal-radius: 7
+    vertical-radius: 3
+    point-blank: true
+    spell-source-in-center: false
+    fail-if-no-targets: false
+    spells:
+        - Shiva_P2
+
+Shiva_AP2:
+    spell-class: ".targeted.AreaEffectSpell"
+    horizontal-radius: 7
+    vertical-radius: 3
+    point-blank: true
+    spell-source-in-center: false
+    fail-if-no-targets: false
+    spells:
+        - Shiva_FM
+
+Shiva_AP3:
+    spell-class: ".targeted.AreaEffectSpell"
+    horizontal-radius: 7
+    vertical-radius: 7
+    point-blank: true
+    spell-source-in-center: false
+    fail-if-no-targets: false
+    spells:
+        - Shiva_P3
+
+Shiva_AP4:
+    spell-class: ".targeted.AreaEffectSpell"
+    horizontal-radius: 7
+    vertical-radius: 2
+    point-blank: true
+    spell-source-in-center: false
+    fail-if-no-targets: false
+    spells:
+        - Shiva_C
+
+Shiva_AP5:
+    spell-class: ".targeted.AreaEffectSpell"
+    horizontal-radius: 7
+    vertical-radius: 2
+    point-blank: true
+    spell-source-in-center: false
+    fail-if-no-targets: false
+    spells:
+        - Shiva_P4
+
+Shiva_FM:
+    spell-class: ".TargetedMultiSpell"
+    spells:
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+        - DELAY 2
+        - Shiva_F
+
+Shiva_F:
+    spell-class: ".targeted.ForcetossSpell"   
+    horizontal-force: 0
+    vertical-force: 1
+
+Shiva_C:
+    spell-class: ".targeted.CombustSpell"
+    range: 1
+    fire-ticks: 100
+    fire-tick-damage: 2
+    prevent-immunity: true
+    target-players: false
+
